@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简易计算器</title>
+    <link rel="stylesheet" href="style/demo.css">
+</head>
+
+<body>
+    <div class="content" id="calculator">
+        <table width="100%" border="0" cellpadding="6" cellspacing="0">
+            <tr>
+                <td colspan="5" class="screen">
+                <!-- 计算器运算过程显示位置 -->
+                                <div id="process"></div>
+                                 <!-- 计算器显示屏，显示结果和用户输入 -->
+                    <input type="text"  value="0"  id="note" />
+                </td>
+            </tr>
+            <tr>
+                <!-- 数字7 -->
+                <td>
+                    <input type="button" value="7" class="num" />
+                </td>
+                 <!-- 数字8 -->
+                <td>
+                    <input type="button" value="8" class="num"/>
+                </td>
+                 <!-- 数字8 -->
+                <td>
+                    <input type="button" value="9" class="num"/>
+                </td>
+                 <!-- 运算 除 -->
+                <td>
+                    <input type="button" value="÷" class="btn2"/>
+                </td>
+                 <!-- 清空 -->
+                <td>
+                    <input name="button" type="button" value="C" class="btn_cancle" onclick="clearNote()"/>
+                </td>
+            </tr>
+            <tr>
+             <!-- 数字4 -->
+                <td>
+                    <input type="button" value="4" class="num"/>
+                </td>
+                 <!-- 数字5 -->
+                <td>
+                    <input type="button" value="5" class="num" />
+                </td>
+                 <!-- 数字6 -->
+                <td>
+                    <input type="button" value="6" class="num"/>
+                </td>
+                 <!-- 运算 乘 -->
+                <td>
+                    <input type="button" value="×" class="btn2"/>
+                </td>
+
+                 <!-- 运算 sin -->
+                <td>
+                    <input name="button2" type="button" value="sin" class="btn1" onclick="operationShow(this)" />
+                </td>
+            </tr>
+            <tr>
+              <!-- 数字1 -->
+                <td>
+                    <input type="button" value="1" class="num"/>
+                </td>
+                  <!-- 数字2 -->
+                <td>
+                    <input type="button" value="2" class="num" />
+                </td>
+                  <!-- 数字3 -->
+                <td>
+                    <input type="button" value="3" class="num" />
+                </td>
+                  <!-- 运算 减 -->
+                <td>
+                    <input type="button" value="-" class="btn2"/>
+                </td>
+
+                  <!-- 运算 cos -->
+                <td>
+                    <input name="button3" type="button" value="cos" class="btn1" onclick="operationShow(this)" />
+                </td>
+            </tr>
+            <tr>
+              <!-- 数字0 -->
+                <td colspan="2">
+                    <input type="button" value="0" class="num"/>
+                </td>
+                  <!-- 小数点 -->
+                <td>
+                    <input type="button" value="." class="dot" onclick="dot()" />
+                </td>
+                  <!-- 运算 + -->
+                <td>
+                    <input type="button" value="+" class="btn2"/>
+                </td>
+                 <!-- 等于 -->
+                <td>
+                    <input type="button" value="＝" class="btn1" onclick="result()"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+   <script type="text/javascript" src="js/demo.js"></script>
+</body>
+
+</html>

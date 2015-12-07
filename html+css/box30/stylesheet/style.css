@@ -1,0 +1,157 @@
+/* CSS Document */
+
+
+/*盒子模型*/
+
+.wrap {
+    width: 800px;
+    height: 417px;
+    border: 1px dashed #000;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+.wrap .box {
+    padding: 10px;
+    background: #FEEFD4;
+    width: 400px;
+    height: 267px;
+    border: 15px solid #200100;
+    margin: 50px 0 0 175px;
+}
+
+
+/*弹性盒子模型*/
+
+
+/*固定宽度平均分配*/
+
+.elastic_box {
+    width: 1000px;
+    margin: 50px auto;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+.elastic_box div {
+    width: 257px;
+    height: 257px;
+    border: 15px solid #000;
+    border-color: #000 #4b4b4b;
+    box-shadow: -2px 0 5px #000;
+}
+
+.elastic_box div.box1 {
+    background: url(../images/picture2.jpg) no-repeat;
+}
+
+.elastic_box div.box2 {
+    background: url(../images/picture3.jpg) no-repeat;
+}
+
+.elastic_box div.box3 {
+    background: url(../images/picture4.jpg) no-repeat;
+}
+
+
+/*杂志阅读*/
+
+.elastic_box2 {
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 10px;
+    border: 10px solid #000;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 300px;
+    -moz-column-width: 300px;
+    column-width: 300px;
+}
+
+
+/*垂直水平居中*/
+
+.center {
+    width: 600px;
+    height: 700px;
+    margin: 0 auto;
+    background: #CDFFCC;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+}
+
+
+/*flex box垂直分布*/
+
+.flexbox {
+    margin: 0 auto;
+    width: 600px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: 600px;
+}
+
+.flexbox .box1 {
+    background: #FECCCB;
+    -webkit-flex: 1 1 300px;
+}
+
+.flexbox .box2 {
+    ;
+    background: #CDFFCC;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-order: 3;
+    order: 3;
+}
+
+.flexbox .box3 {
+    background: #CECCFE;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-order: 2;
+    order: 2;
+}
+
+
+/*flex box水平分布*/
+
+.flexbox2 {
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    height: 50px;
+}
+
+.flexbox2 .box1 {
+    background: #7BB25C;
+    -webkit-flex: 2;
+}
+
+.flexbox2 .box2 {
+    ;
+    background: #20549D;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.flexbox2 .box3 {
+    background: #D8390C;
+    -webkit-flex: 1;
+    flex: 1;
+}

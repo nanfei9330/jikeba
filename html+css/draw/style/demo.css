@@ -1,0 +1,580 @@
+.bird {
+    margin: 100px 0 0 100px;
+    position: relative;
+    -webkit-animation: allMove 5s ease;
+            animation: allMove 5s ease;
+            top: 0;
+            left: 800px;
+
+}
+
+
+/*头*/
+
+.bird .hairWrapper {
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    top: -56px;
+    left: 31px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+.bird .hairWrapper .hairLeft {
+    background: #fff;
+    position: absolute;
+    width: 49px;
+    height: 67px;
+    border-top-right-radius: 34px;
+    z-index: 55;
+    left: -34px;
+    top: -6px;
+}
+
+.bird .hairWrapper .hairRight {
+    background: #c61f1f;
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    border-top-right-radius: 50px;
+}
+
+
+/*脸部*/
+
+.bird .faceTopWrapper {
+    width: 141px;
+    height: 68px;
+    position: absolute;
+    left: -16px;
+    top: -15px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.bird .faceTop {
+    background: #c61f1f;
+    width: 141px;
+    height: 86px;
+    border-top-left-radius: 141px;
+    border-top-right-radius: 141px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+}
+
+.bird .faceBottom {
+    background: #c61f1f;
+    width: 141px;
+    height: 70px;
+    position: absolute;
+    top: 19px;
+    left: -16px;
+    border-radius: 50%;
+    z-index: 6;
+}
+
+
+/*脖子*/
+
+.bird .neck {
+    background: #781F1F;
+    width: 125px;
+    height: 70px;
+    position: absolute;
+    top: 24px;
+    left: -8px;
+    border-radius: 80%;
+    z-index: 5;
+}
+
+
+/*右眼*/
+
+.rightEye {
+    position: absolute;
+    left: 54px;
+}
+
+.eyeBack {
+    width: 50px;
+    height: 30px;
+    background: #000;
+    position: absolute;
+    top: 23px;
+    left: 33px;
+    z-index: 300;
+}
+
+
+/*眼睛共用*/
+
+.bird .eye {
+    width: 46px;
+    height: 46px;
+    background: #fff;
+    border: 5px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 333;
+}
+
+.bird .eyeCenter {
+    width: 30px;
+    height: 30px;
+    background: #000;
+    position: absolute;
+    border-radius: 50%;
+    left: 16px;
+    top: 13px;
+    z-index: 335;
+    /*animation: eyeBig 1s infinite;*/
+}
+
+
+/*眼睛高光*/
+
+.bird .eyeLight {
+    width: 14px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 29px;
+    top: 18px;
+    -webkit-transform: rotate(36deg);
+            transform: rotate(36deg);
+    z-index: 337;
+    -webkit-animation: eyeMove 2s infinite;
+            animation: eyeMove 2s infinite;
+}
+
+.bird .mouthTop {
+    width: 26px;
+    height: 26px;
+    background: #FFC23F;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 1px;
+    z-index: 300;
+}
+
+.bird .mouthWrapper {
+    width: 60px;
+    height: 10px;
+    background: transparent;
+    position: absolute;
+    top: 45px;
+    left: 40px;
+    overflow: hidden;
+    z-index: 355;
+}
+
+
+/*嘴巴-扇形*/
+
+.bird .mouth {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 12px;
+    border-color: #FFC23F transparent transparent transparent;
+    position: absolute;
+    top: 55px;
+    left: 42px;
+    z-index: 355;
+}
+
+
+/*身躯*/
+
+.bird .mid {
+    width: 90px;
+    height: 90px;
+    background: #C61F1F;
+    border-radius: 43px;
+    position: absolute;
+    top: 73px;
+    left: 10px;
+    z-index: 3;
+}
+
+
+/*左手*/
+
+.bird .leftHand {
+    width: 60px;
+    height: 50px;
+    background: #781F1F;
+    position: absolute;
+    left: -8px;
+    top: 84px;
+    border-top-left-radius: 130px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 130px;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    z-index: 2;
+    -webkit-animation: leftHandMove 1s ease infinite;
+            animation: leftHandMove 1s ease infinite;
+}
+
+.bird .rightHand {
+    width: 60px;
+    height: 50px;
+    background: #781F1F;
+    position: absolute;
+    left: 57px;
+    top: 84px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 130px;
+    border-bottom-left-radius: 130px;
+    border-bottom-right-radius: 10px;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+    z-index: 2;
+    -webkit-animation: rightHandMove 1s ease infinite;
+            animation: rightHandMove 1s ease infinite;
+}
+
+
+/*尾巴*/
+
+.bird .tailWrapper {
+    position: absolute;
+    top: 155px;
+    left: 40px;
+    background: #781f1f;
+    width: 32px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.bird .tailWrapper .tail {
+    position: absolute;
+    background: #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    top: 15px;
+    left: -57px;
+}
+
+
+/*脚共用*/
+
+.bird .foot {
+    position: absolute;
+    top: 150px;
+}
+
+.bird .foot .f1 {
+    width: 4px;
+    height: 30px;
+    background: #e77204;
+    -webkit-animation: footF1 5s infinite;
+            animation: footF1 5s infinite;
+}
+
+.bird .foot .f2 {
+    width: 13px;
+    height: 3px;
+    border-radius: 50%;
+    background: #e77204;
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+}
+
+.bird .foot .f3 {
+    width: 13px;
+    height: 3px;
+    border-radius: 50%;
+    background: #e77204;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    position: relative;
+    left: -2px;
+}
+
+.bird .foot .f4 {
+    width: 8px;
+    height: 3px;
+    border-radius: 50%;
+    background: #e77204;
+    -webkit-transform: rotate(150deg);
+            transform: rotate(150deg);
+    position: relative;
+    left: -6px;
+    top: -5px;
+}
+
+
+/*左脚*/
+
+.bird .leftFoot {
+    position: absolute;
+    left: 44px;
+}
+
+.bird .leftFoot .f3 {
+    -webkit-transform: rotate(126deg);
+            transform: rotate(126deg);
+    left: -6px;
+}
+
+.bird .leftFoot .f4 {
+    left: -7px;
+}
+
+
+/*右脚*/
+
+.bird .rightFoot {
+    left: 65px;
+    -webkit-animation: rightFootMove 1s infinite;
+            animation: rightFootMove 1s infinite;
+}
+
+.bird .rightFoot .f1 {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    -webkit-animation: footF1 5s infinite;
+            animation: footF1 5s infinite;
+}
+
+
+/*动画*/
+
+@-webkit-keyframes eyeMove {
+    0% {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+    20% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+}
+
+@keyframes eyeMove {
+    0% {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+    20% {
+        -webkit-transform: rotate(60deg);
+                transform: rotate(60deg);
+    }
+}
+
+
+/*左手运动*/
+
+@-webkit-keyframes leftHandMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    75% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+}
+
+@keyframes leftHandMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    75% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes rightHandMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    75% {
+        -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+}
+
+@keyframes rightHandMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    75% {
+        -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes eyeBig {
+    0% {
+        width: 30px;
+        height: 30px;
+        left: 16px;
+        top: 13px;
+    }
+    100% {
+        width: 40px;
+        height: 40px;
+        left: 9px;
+        top: 8px;
+    }
+}
+
+@keyframes eyeBig {
+    0% {
+        width: 30px;
+        height: 30px;
+        left: 16px;
+        top: 13px;
+    }
+    100% {
+        width: 40px;
+        height: 40px;
+        left: 9px;
+        top: 8px;
+    }
+}
+
+@-webkit-keyframes footF1 {
+    0% {
+        height: 25px;
+    }
+    25% {
+        height: 35px;
+    }
+    50% {
+        height: 25px;
+    }
+    70% {
+        height: 35px;
+    }
+    100% {
+        height: 25px;
+    }
+}
+
+@keyframes footF1 {
+    0% {
+        height: 25px;
+    }
+    25% {
+        height: 35px;
+    }
+    50% {
+        height: 25px;
+    }
+    70% {
+        height: 35px;
+    }
+    100% {
+        height: 25px;
+    }
+}
+
+@-webkit-keyframes allMove {
+    0% {
+        top: 0;
+        left: 0px;
+    }
+    25% {
+        top: 200px;
+        left: 200px;
+    }
+    50% {
+        top: 0;
+        left: 400px;
+    }
+    70% {
+        top: 100px;
+        left: 600px;
+    }
+    100% {
+        top: 0;
+        left: 800px;
+    }
+}
+
+@keyframes allMove {
+    0% {
+        top: 0;
+        left: 0px;
+    }
+    25% {
+        top: 200px;
+        left: 200px;
+    }
+    50% {
+        top: 0;
+        left: 400px;
+    }
+    70% {
+        top: 100px;
+        left: 600px;
+    }
+    100% {
+        top: 0;
+        left: 800px;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>百度首页练习-版本2</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+	<!--
+	修改与优化：
+	1、右上角hover颜色改变，用户体验更好
+	2、修改布局定位方式，实现拉伸页面时，位置随高度宽度变化而变化，展示更稳定
+	3、加上必要的注释，阅读更方便	
+	4、css中增加层级关系，结构更明显
+	 -->
+</head>
+
+<body onLoad="window.form.keywords.focus();">
+    <div class="wrapper">
+	
+	<!--头部导航 -->
+	 <nav class="top">
+            <div class="head">
+                <div class="rightnav">
+                    <a href="#">新闻</a>
+					<a href="#">hao123</a>
+					<a href="#">地图</a>
+					<a href="#">视频</a>
+					<a href="#">贴吧</a>
+					<a href="#" class="login">登录</a>
+					<a href="#" class="set">设置</a>
+					<a href="#" class="moreproduct">更多产品</a>
+                </div>
+            </div>
+        </nav>
+		
+		
+		<!--中部表单 -->
+        <section class="main">
+            <div class="logo">
+                <img src="images/bdlogo.png" alt="百度LOGO" width="270" height="129">
+            </div>
+            <div class="form">
+                <form action="#" method="get" name="form">
+                    <input type="text" value="" name="keywords" class="keywords" autocomplete="off">
+                    <input type="submit" value="百度一下" class="submit">
+                </form>
+            </div>
+        </section>
+       
+	   
+	   <!--底部 -->
+        <footer class="footer">
+            <p class="foot_link">
+                <a href="#">把百度设为主页</a>
+                <a href="#">关于百度</a>
+                <a href="#">About&nbsp;&nbsp;Baidu</a>
+            </p>
+            <p class="info_text">
+                ©2015 Baidu <a href="#">使用百度前必读</a>&nbsp;
+				<a href="#">意见反馈</a> 京ICP证030173号 <i class="ico"></i>
+            </p>
+        </footer>
+    </div>
+
+</html>

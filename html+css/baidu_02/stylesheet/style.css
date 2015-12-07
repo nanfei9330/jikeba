@@ -1,0 +1,156 @@
+/* CSS Document */
+*{
+   padding: 0;
+    margin: 0;
+}
+
+html{
+  height:100%;
+}
+body { 
+    font-size: 12px;
+    font-family: Arial;
+	height:100%;
+}
+
+.wrapper{
+    min-width: 950px;
+    height: 100%;
+    min-height: 610px;
+    position: relative;
+}
+
+.wrapper .top {
+    width: 100%;
+    position: absolute;
+   top:0;
+}
+
+
+/*顶部导航*/
+.wrapper .top .rightnav {
+    float: right;
+    margin: 19px 0 0 0;
+}
+
+.wrapper .top .rightnav a {
+    color: #333;
+    margin-right:18px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.wrapper .top .rightnav a:hover{
+color:#00c;
+}
+
+.wrapper .top .rightnav a.login,
+.wrapper .top .rightnav a.set {
+    font-weight: normal;
+}
+
+
+.wrapper .top .rightnav .moreproduct {
+    display: inline-block;
+    background: #38f;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    padding: 5px 4px;
+    margin-top: -6px;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 7px;
+}
+.wrapper .top .rightnav .moreproduct:hover{
+color:#000;
+background:#E0E0E0;
+}
+
+
+/*表单部分*/
+.wrapper .main {
+    width: 950px;
+	height:212px;
+    text-align: center;
+	position:absolute;
+	padding:50px 0 0 0;
+	top:10%;
+	left:50%;
+	margin-left:-475px;
+}
+
+.wrapper .main form {
+    margin: 0 auto;
+    width: 648px;
+}
+
+.wrapper .main form .keywords {
+    width: 527px;
+    height: 34px;
+    border: 1px solid #bbb;
+    padding-left: 10px;
+    float: left;
+    outline: none;
+}
+.wrapper .main form .keywords:focus{
+ border: 1px solid #4791ff;
+}
+
+.wrapper .main form .submit {
+    background: #3385FF;
+    color: #fff;
+    width: 100px;
+    height: 36px;
+    text-align: center;
+    line-height: 37px;
+    border: none;
+    float: left;
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing:1px;
+    border-bottom:1px solid #2d78f4;
+    outline: medium;
+}
+.wrapper .main form .submit:hover{
+background:#317ef3;
+border-bottom:1px solid #2868c8;
+box-shadow: 1px 1px 1px #ccc;
+}
+
+
+
+/*底部*/
+.wrapper .footer {
+    position: absolute;
+    bottom: 45px;
+    text-align: center;
+    width: 100%;
+}
+
+.wrapper .footer .info_text {
+    color: #666;
+}
+
+.wrapper .footer p{
+    margin: 0;
+}
+.wrapper .footer .foot_link{margin-bottom: 5px;}
+.wrapper .footer .foot_link a {
+    padding: 0 8px;
+    color: #00c;
+}
+
+.wrapper .footer .info_text a {
+    color: #666;
+}
+
+.wrapper .footer .ico {
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(../images/b.jpg) no-repeat -6px -7px;
+  position: relative;
+  top: 3px;
+}

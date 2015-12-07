@@ -1,0 +1,20 @@
+    .table {
+        border: 2px solid #000;border-collapse: collapse;
+    }
+    
+    .table th {
+        background: #3E90C2;
+        border: 1px solid #4BB2D3;
+        color: #fff;
+        line-height: 30px;
+    }
+    
+    .table td {
+        border: 1px solid #4BB2D3;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    .day {
+        background: #FDF3CF;
+    }

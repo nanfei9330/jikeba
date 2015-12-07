@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>javascript任务2-简易计算器</title>
+</head>
+
+<body>
+    <h1>简易计算器</h1> 输入数值1：
+    <input type="text" name="num1" id="num1">
+    <br />
+    <br /> 选择运算符：
+    <select name="operator" id="operator">
+        <option value="jia">加</option>
+        <option value="jian">减</option>
+        <option value="cheng">乘</option>
+        <option value="chu">除</option>
+    </select>
+    <br />
+    <br /> 输入数值2：
+    <input type="text" name="num2" id="num2">
+    <br />
+    <br />
+    <input type="button" value="运算" style="width:200px;height:30px;" onclick="count()">
+
+    <div id="msg" style="color:blue;line-height:50px;"></div>
+    <script type="text/javascript" src="demo.js"></script>
+</body>
+
+</html>

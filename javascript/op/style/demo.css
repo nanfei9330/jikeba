@@ -1,0 +1,65 @@
+.content {
+    width: 456px;
+    background: #EAEAEA;
+    border: 1px solid #000;
+    margin: 100px auto 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.content input[type="button"] {
+    width: 100%;
+    height: 45px;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #5D5D5D;
+    border-radius: 5px;
+}
+
+.content table td {
+    width: 72px;
+}
+.content input:hover{
+	background: #fff;
+}
+
+/*screen*/
+.content .screen {
+       background: #FCFDEA;
+    text-align: right;
+    padding-right: 10px;
+     border: 1px solid #5D5D5D;
+}
+.screen input {
+ background: #FCFDEA;
+    border: none;
+    text-align: right;
+    font-size: 30px;
+    width: 100%;
+    outline: none;
+}
+.screen input:hover{
+    background: #FCFDEA;
+}
+#process {
+    height: 20px;
+}
+
+/*button style1 */
+.content .btn1,.content .btn1:hover  {
+    background: #404040;
+    color: #fff;
+}
+
+/*button style2 */
+.content .btn2,.content .btn2:hover {
+    background: #737B81;
+    color: #fff;
+}
+
+/*button cancle*/
+.content .btn_cancle,.content .btn_cancle:hover {
+    background: #DF8249;
+    color: #fff;
+}

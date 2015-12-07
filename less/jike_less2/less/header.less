@@ -1,0 +1,122 @@
+@import url('theme.less');
+/*header*/
+
+.header-wrapper {
+    height: 55px;
+    width: 100%;
+    padding: 15px 0 0 0;
+    border-bottom: 2px solid @theme_color;
+    #header {
+        position: relative;
+        .search {
+            width: 380px;
+            height: 38px;
+            position: absolute;
+            top: 2px;
+            left: 50%;
+            margin-left: -190px;
+            border: 1px solid @color_e4;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        .hot-words {
+            position: absolute;
+            top: 9px;
+            right: 48px;
+            a {
+                display: inline-block;
+                padding: 1px 3px;
+                margin-left: 5px;
+                color: gray;
+                background: #f3f3f3;
+                &:hover {
+                    color: #333;
+                    background: #dfdfdf
+                }
+            }
+        }
+        .search-btn,
+        .search-focus {
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            width: 40px;
+            height: 38px;
+            border: 1px solid @color_e4;
+            color: #6d6d6d;
+            background: url(../images/topsearch-icon_e1f5df2.png) no-repeat center center #fff;
+            cursor: pointer;
+            &:hover {
+                background: url(../images/topsearch-icon2_8c8d8b0.png) no-repeat center center @theme_color;
+                border: 1px solid @theme_color;
+            }
+        }
+        .keywords {
+            width: 100%;
+            padding: 9px 10px 9px 15px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border: none;
+            font-size: 12px;
+        }
+        .loginbox {
+            position: absolute;
+            right: 10px;
+            top: 0;
+            line-height: 50px;
+            img {
+                vertical-align: middle;
+            }
+            em {
+                font-style: normal;
+            }
+            .user-menu-menu {
+                position: absolute;
+                border: 1px solid #EDEDED;
+                top: 40px;
+                background: #fff;
+                right: 1px;
+                padding-top: 5px;
+                z-index: 555;
+                line-height: 20px;
+                display: none;
+                i.arrow {
+                    display: block;
+                    width: 8px;
+                    height: 10px;
+                    overflow: hidden;
+                    background: url(../images/toparrow.jpg) no-repeat;
+                    position: absolute;
+                    top: -7px;
+                    left: 36px;
+                }
+                a {
+                    display: inline-block;
+                    width: 50px;
+                    color: #666;
+                    line-height: 26px;
+                    padding: 0 14px;
+                    &:hover {
+                        background: #F3F3F3;
+                        color: @theme_color;
+                    }
+                }
+                &:hover em.arrow {
+                    background: url(../images/arrow2.jpg) no-repeat 0 5px;
+                }
+            }
+        }
+        .user-menu {
+            display: inline-block;
+            a {
+                color: @theme_color;
+                .arrow {
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    background: url(../images/arrow.jpg) no-repeat 0 3px;
+                }
+            }
+        }
+    }
+}

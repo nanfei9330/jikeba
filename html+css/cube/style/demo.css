@@ -1,0 +1,95 @@
+/*外层容器加3D视图声明，定义基准点*/
+
+#cube {
+    width: 200px;
+    height: 200px;
+    margin: 200px auto 0;
+    position: relative;
+    /*加perspective有视距*/
+    -webkit-transform-origin: 100px 100px;
+    transform-origin: 100px 100px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+
+/*加上move自动旋转*/
+
+.move {
+    -webkit-animation: run 3s linear infinite;
+}
+
+@-webkit-keyframes run {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        -webkit-transform: rotateX(360deg) rotateY(360deg);
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+
+/*开始全部在同一个平面*/
+
+#cube div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+/*前-往前推100*/
+#cube div.front {
+    background: #FE8A0A;
+    -webkit-transform: translateZ(100px);
+    transform: translateZ(100px);
+}
+
+
+/*后-往后推100*/
+#cube div.back {
+    background: #C50513;
+    -webkit-transform: translateZ(-100px);
+    transform: translateZ(-100px);
+}
+
+
+/*左-向前推100，绕Y旋转-90度*/
+#cube div.left {
+    background: #00469F;
+    -webkit-transform: rotateY(-90deg) translateZ(100px);
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+
+/*右-向前推100，绕Y旋转90度*/
+#cube div.right {
+    background: #009F41;
+    -webkit-transform: rotateY(90deg) translateZ(100px);
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+
+/*上-向前推100，绕X旋转-90度*/
+#cube div.top {
+    background: #FFFF00;
+    -webkit-transform: rotateX(-90deg) translateZ(100px);
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+
+/*下-向前推100，绕X旋转90度*/
+#cube div.bottom {
+    background: #F8F8F8;
+    -webkit-transform: rotateX(90deg) translateZ(100px);
+    transform: rotateX(90deg) translateZ(100px);
+}

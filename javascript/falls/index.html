@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>瀑布流</title>
+    <link rel="stylesheet" type="text/css" href="css/falls.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+
+<!-- 
+版本2：
+加入延时加载提高网页速度
+修正高度计算的方式
+ -->
+</head>
+
+<body>
+    <div id="container">
+    <!-- 一个区块开始 -->
+        <div class="box">
+            <div class="content">
+                <a href="#1"><img src="images/1.jpg"><p>小丸子1 - 百度百科</p></a>
+            </div>
+        </div>
+ <!-- 一个区块结束 -->
+ <div class="box">
+            <div class="content">
+                <a href="#2"><img src="images/loading.gif" data-original="images/2.jpg"><p>小丸子2 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#3"><img src="images/3.jpg"><p>小丸子3 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#4"><img src="images/4.jpg"><p>小丸子4 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#5"><img src="images/5.jpg"><p>小丸子5 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#6"><img src="images/6.jpg"><p>小丸子6 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#7"><img src="images/7.jpg"><p>小丸子7 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#8"><img src="images/8.jpg"><p>小丸子8 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#9"><img src="images/9.jpg"><p>小丸子9 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#10"><img src="images/10.jpg"><p>小丸子10 - 百度百科</p></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <a href="#1"><img src="images/1.jpg"><p>小丸子1 - 百度百科</p></a>
+            </div>
+        </div>
+
+ <div class="box">
+            <div class="content">
+                <a href="#2"><img src="images/2.jpg"><p>小丸子2 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#3"><img src="images/3.jpg"><p>小丸子3 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#4"><img src="images/4.jpg"><p>小丸子4 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#5"><img src="images/5.jpg"><p>小丸子5 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#6"><img src="images/6.jpg"><p>小丸子6 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#7"><img src="images/7.jpg"><p>小丸子7 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#8"><img src="images/8.jpg"><p>小丸子8 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#9"><img src="images/9.jpg"><p>小丸子9 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#10"><img src="images/10.jpg"><p>小丸子10 - 百度百科</p></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <a href="#1"><img src="images/1.jpg"><p>小丸子1 - 百度百科</p></a>
+            </div>
+        </div>
+ <div class="box">
+            <div class="content">
+                <a href="#2"><img src="images/2.jpg"><p>小丸子2 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#3"><img src="images/3.jpg"><p>小丸子3 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#4"><img src="images/4.jpg"><p>小丸子4 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#5"><img src="images/5.jpg"><p>小丸子5 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#6"><img src="images/6.jpg"><p>小丸子6 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#7"><img src="images/7.jpg"><p>小丸子7 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#8"><img src="images/8.jpg"><p>小丸子8 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#9"><img src="images/9.jpg"><p>小丸子9 - 百度百科</p></a>
+            </div>
+        </div>
+         <div class="box">
+            <div class="content">
+                <a href="#10"><img src="images/10.jpg"><p>小丸子10 - 百度百科</p></a>
+            </div>
+        </div>
+
+
+    </div>
+
+       <!-- 瀑布流js -->
+    <script type="text/javascript" src="js/falls.js"></script>
+</body>
+
+</html>

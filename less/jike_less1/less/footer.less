@@ -1,0 +1,239 @@
+/*theme control*/
+@import url('theme.less');
+
+/*footer*/
+
+.footer {
+    width: 100%;
+    .jk-info-wrapper {
+        width: 100%;
+        background: #fafafa;
+        border-top: 1px solid @color_e4;
+        border-bottom: 1px solid @color_e4;
+    }
+    .copyright {
+        text-align: center;
+        padding: 20px 0;
+        color: #999;
+        strong {
+            font-weight: normal;
+        }
+        a {
+            color: #999;
+            &:hover {
+                color: @theme_color;
+            }
+        }
+    }
+    .jk-info {
+        overflow: visible;
+        min-height: 250px;
+        height: auto;
+        a {
+            padding-left: 5px;
+            &:hover {
+                color: @theme_color;
+            }
+        }
+        dl {
+            width: 155px;
+            padding-left: 30px;
+            color: gray;
+            margin: 25px 0;
+            float: left;
+            border-left: 1px solid @color_e4;
+            min-height: 175px;
+        }
+        dt a {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        dd {
+            margin-top: 10px;
+        }
+    }
+    //footer share box
+    .share-box {
+        width: 200px;
+        min-height: 226px;
+        border-left: 1px solid @color_e4;
+        padding: 20px 0 0 40px;
+        height: auto;
+        .title {
+            font-size: 15px;
+            color: @theme_color;
+            display: block;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        .app-download {
+            text-align: left;
+            a {
+                padding: 0;
+            }
+            strong {
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .share {
+        margin-top: 15px;
+        height: 32px;
+        a {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            float: left;
+            margin-right: 7px;
+            position: relative;
+            background: url(../images/icon_7f8b929.png) -23px 0 no-repeat;
+        }
+        .sina-icon {
+            background-position: -20px 0;
+            &:hover {
+                background-position: -20px -40px;
+            }
+        }
+        .tieba-icon {
+            background-position: -142px 0;
+            &:hover {
+                background-position: -142px -40px;
+            }
+        }
+        .qq-icon {
+            background-position: -20px -82px;
+            overflow: visible;
+            img {
+                position: absolute;
+                bottom: 32px;
+                left: -38px;
+                z-index: 555;
+                display: none;
+            }
+            &:hover {
+                background-position: -20px -122px;
+                img {
+                    display: block;
+                }
+            }
+        }
+    }
+    .kefu {
+        clear: left;
+        .kefu-icon {
+            width: 40px;
+            height: 40px;
+            float: left;
+            display: inline-block;
+            background: url(../images/kefu_8edc734.png) no-repeat 0 0;
+            background-size: 80px 40px;
+            margin-right: 5px;
+        }
+        h5 {
+            margin-bottom: 2px;
+            line-height: 22px;
+            padding-left: 5px;
+            font-weight: normal;
+        }
+    }
+}
+
+
+/*go to top*/
+
+.gotop {
+    position: fixed;
+    left: 50%;
+    margin-left: 510px;
+    bottom: 50px;
+    width: 34px;
+    text-align: center;
+    z-index: 2000;
+    .top {
+        display: inline-block;
+        cursor: pointer;
+        width: 34px;
+        height: 34px;
+        background: url(../images/gotop_d19051b.jpg) no-repeat;
+        background-size: 34px 101px;
+        margin-bottom: -5px;
+        &:hover {
+            background: url(../images/gotop2_3c1a479.jpg) no-repeat;
+            background-size: 34px 101px;
+        }
+    }
+    .erwma {
+        position: relative;
+        display: block;
+        background: url(../images/phone-1_b9a83cb.png) center center no-repeat #f7f7f7;
+        background-size: 12px 24px;
+        width: 34px;
+        height: 35px;
+        border-bottom: 1px solid #e0e0e0;
+        &:hover {
+            background: url(../images/phone-2_3e87776.png) center center no-repeat;
+            background-size: 12px 24px;
+            .appewm {
+                display: inline-block;
+            }
+        }
+        .appewm {
+            display: none;
+            width: 126px;
+            height: 159px;
+            position: absolute;
+            background: url(../images/appewm_72cb766.png) no-repeat;
+            background-size: 100%;
+            left: -126px;
+            top: -70px;
+        }
+    }
+    .diaocha {
+        display: block;
+        width: 34px;
+        height: 34px;
+        background: url(../images/gotop_d19051b.jpg) no-repeat 0 -68px #f7f7f7;
+        background-size: 34px 101px;
+        &:hover {
+            background: url(../images/gotop2_3c1a479.jpg) no-repeat 0 -68px #f7f7f7;
+            background-size: 34px 101px;
+        }
+    }
+    .qq-online {
+        display: block;
+        width: 34px;
+        height: 35px;
+        background: url(../images/kfu_ca37db8.png) no-repeat center center #f7f7f7;
+        position: relative;
+        &:hover {
+            background: url(../images/kfu1_3dd1509.png) no-repeat center center #f7f7f7;
+            span {
+                display: block;
+            }
+        }
+        span {
+            position: absolute;
+            width: 180px;
+            left: -190px;
+            top: 0;
+            background: #f7f7f7;
+            line-height: 20px;
+            padding: 5px 0;
+            display: none;
+            i {
+                width: 0;
+                height: 0;
+                border-top: 8px solid transparent;
+                border-left: 10px solid #f7f7f7;
+                border-bottom: 8px solid transparent;
+                position: absolute;
+                right: -10px;
+                top: 12px;
+            }
+        }
+    }
+}

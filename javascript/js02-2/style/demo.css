@@ -1,0 +1,47 @@
+.counter {
+    width: 300px;
+    margin: 100px auto;
+    background: #9DD2E8;
+    padding: 5px;
+}
+
+.counter table,
+.counter td {
+    border: none;
+}
+
+.counter td {
+    width: 20%;
+}
+
+.counter input[type="button"] {
+    width: 100%;
+    height: 50px;
+    font-size: 28px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+}
+
+.cancle {
+    background: #FCA0A8;
+}
+
+#process {
+    height: 20px;
+}
+
+.screen {
+    background: #79A6B9;
+    color: #fff;
+    padding-right: 10px;
+}
+
+.screen input {
+    background: #79A6B9;
+    border: none;
+    text-align: right;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+}

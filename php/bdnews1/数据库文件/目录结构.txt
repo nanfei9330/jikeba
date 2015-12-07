@@ -1,0 +1,15 @@
+
+newajax.php ===============前台新闻异步操作文件
+news.php  =================前台新闻页
+
+config/conn.php ===========连接信息
+config/mysql.php ==========数据库操作类
+
+control/news_admin.php ====后台新闻管理操作文件
+control/news_default.php ==前台新闻管理操作文件
+page.php  =================分页类
+
+admin/check_login.php =====登录检查页
+admin/index.php   =========新闻管理首页
+admin/login.php ===========后台登录页
+

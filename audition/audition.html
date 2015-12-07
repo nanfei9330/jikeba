@@ -1,0 +1,429 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font: 13.34px helvetica, arial, freesans, clean, sans-serif;
+        color: black;
+        line-height: 1.4em;
+        background-color: #F8F8F8;
+        padding: 0.7em;
+    }
+    
+    p {
+        margin: 1em 0;
+        line-height: 1.5em;
+    }
+    
+    table {
+        font-size: inherit;
+        font: 100%;
+        margin: 1em;
+    }
+    
+    table th {
+        border-bottom: 1px solid #bbb;
+        padding: .2em 1em;
+    }
+    
+    table td {
+        border-bottom: 1px solid #ddd;
+        padding: .2em 1em;
+    }
+    
+    input[type=text],
+    input[type=password],
+    input[type=image],
+    textarea {
+        font: 99% helvetica, arial, freesans, sans-serif;
+    }
+    
+    select,
+    option {
+        padding: 0 .25em;
+    }
+    
+    optgroup {
+        margin-top: .5em;
+    }
+    
+    pre,
+    code {
+        font: 12px Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+    }
+    
+    pre {
+        margin: 1em 0;
+        font-size: 12px;
+        background-color: #eee;
+        border: 1px solid #ddd;
+        padding: 5px;
+        line-height: 1.5em;
+        color: #444;
+        overflow: auto;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0 1px 2px inset;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+    
+    pre code {
+        padding: 0;
+        font-size: 12px;
+        background-color: #eee;
+        border: none;
+    }
+    
+    code {
+        font-size: 12px;
+        background-color: #f8f8ff;
+        color: #444;
+        padding: 0 .2em;
+        border: 1px solid #dedede;
+    }
+    
+    img {
+        border: 0;
+        max-width: 100%;
+    }
+    
+    abbr {
+        border-bottom: none;
+    }
+    
+    a {
+        color: #4183c4;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    a code,
+    a:link code,
+    a:visited code {
+        color: #4183c4;
+    }
+    
+    h2,
+    h3 {
+        margin: 1em 0;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        border: 0;
+    }
+    
+    h1 {
+        font-size: 170%;
+        border-top: 4px solid #aaa;
+        padding-top: .5em;
+        margin-top: 1.5em;
+    }
+    
+    h1:first-child {
+        margin-top: 0;
+        padding-top: .25em;
+        border-top: none;
+    }
+    
+    h2 {
+        font-size: 150%;
+        margin-top: 1.5em;
+        border-top: 4px solid #e0e0e0;
+        padding-top: .5em;
+    }
+    
+    h3 {
+        margin-top: 1em;
+    }
+    
+    hr {
+        border: 1px solid #ddd;
+    }
+    
+    ul {
+        margin: 1em 0 1em 2em;
+    }
+    
+    ol {
+        margin: 1em 0 1em 2em;
+    }
+    
+    ul li,
+    ol li {
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+    
+    ul ul,
+    ul ol,
+    ol ol,
+    ol ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    blockquote {
+        margin: 1em 0;
+        border-left: 5px solid #ddd;
+        padding-left: .6em;
+        color: #555;
+    }
+    
+    dt {
+        font-weight: bold;
+        margin-left: 1em;
+    }
+    
+    dd {
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+    
+    sup {
+        font-size: 0.83em;
+        vertical-align: super;
+        line-height: 0;
+    }
+    
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+    
+    @media screen and (min-width: 914px) {
+        body {
+            width: 854px;
+            margin: 0 auto;
+        }
+    }
+    
+    @media print {
+        table,
+        pre {
+            page-break-inside: avoid;
+        }
+        pre {
+            word-wrap: break-word;
+        }
+    }
+    </style>
+    <title>Web高级前端面试题</title>
+</head>
+
+<body>
+    <h1>Web高级前端面试题</h1>
+    <h2>HTML简介和发展史</h2>
+    <p>HTML是超文本标记语言，经历了2.0版，到3.2版、4.0版、4.01版，然后经历XHTML1.0再到目前HTML5。
+    </p>
+    <h2>HTML5有哪些新特性？</h2>
+    <ul>
+        <li>使用简洁的DOCTYPE</li>
+        <li>增加了更加语义化的标签，如： &lt;header&gt;、&lt;footer&gt;、&lt;nav&gt;</li>
+        <li>表单增强，提供了更多input类型，如：color、email、date、time</li>
+        <li>对本地离线储存有更好的支持</li>
+        <li>新增用于绘画的canvas标签</li>
+        <li>新增用于媒介回放的video和audio元素</li>
+    </ul>
+    <h2>CSS3有哪些新特性？</h2>
+    <ul>
+    	<li>实现圆角</li>
+    	<li>阴影特效</li>
+    	<li>媒体查询</li>
+    	<li>动画，2D转换</li>
+    	<li>弹性盒模型</li>
+    	<li>增加伪类选择器</li>
+    </ul>
+    <h2>对WEB标准以及W3C的理解与认识</h2>
+    <p>就是写代码更加规范，比如标签要闭合、标签使用小写、不乱嵌套、结构与表现分离、使用外链css和js，目的是使用更少的代码，更容易维护，内容能被更广泛的设备访问，提高网站易用性。</p>
+    <h2>Doctype有什么作用? 严格模式与混杂模式如何区分？它们有何意义?</h2>
+    <p>浏览器根据DOCTYPE选择用什么文档类型规范来渲染这个文档，严格模式是浏览器根据规范去显示页面。混杂模式是一种比较宽松的向后兼容的方式显示页面。如果没有声明，那么默认为混杂模式。</p>
+    <p></p>
+    <h2>前端页面有哪三层构成</h2>
+    <p>结构层 Html、表示层 CSS、行为层 js</p>
+    <h2>HTML元素以及属性</h2>
+    <h3>块元素</h3>
+    <p>div table p h1~h6 iframe dl ul ol form </p>
+    <h3>行内元素</h3>
+    <p>a img em strong span</p>
+    <h2>img标签上alt和title的区别</h2>
+    <p>alt作用是当图片不显示时，用文字表示</p>
+    <p>title作用是为该属性提供信息</p>
+    <p>选择器优先级别计算公式：行内样式加1000,ID选择器数值加100，类选择器数值加10，标签选择器数值加1。总数越大优先级越高。其中!important级别高于一切</p>
+    <h2>什么是语义化的HTML?有什么用？</h2>
+    <p>语义化是使用直观的标签，没加载完css时页面也好看点，提高用户体验，更具可读性，便于团队开发和维护，有利于搜索引擎优化。</p>
+    <p>如：标题用h1-h6，文字段落用p，列表用ul li</p>
+    <h2>CSS选择器有哪些？优先级别如何计算？</h2>
+    <ul>
+        <li>ID选择器</li>
+        <li>类选择器</li>
+        <li>衍生选择器</li>
+        <li>属性选择器</li>
+        <li>后代选择器</li>
+        <li>相邻选择器</li>
+        <li>子元素选择器</li>
+        <li>伪类选择器</li>
+    </ul>
+    <h2>CSS核心知识</h2>
+    <ul>
+        <li>浮动float</li>
+        <li>位置position</li>
+        <li>行高line-height</li>
+        <li>垂直居中和水平居中</li>
+        <li>透明和滤镜</li>
+    </ul>
+    <h2>CSS基本样式</h2>
+    <ul>
+        <li>背景</li>
+        <li>边框</li>
+        <li>文本</li>
+        <li>字体</li>
+        <li>链接</li>
+        <li>表格</li>
+    </ul>
+    <h2>CSS盒模型</h2>
+    <ul>
+        <li>标准盒模型</li>
+        <li>怪异盒模型</li>
+    </ul>
+    <p>盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)</p>
+    <h2>link和@import的区别</h2>
+    <p>link，先加载CSS，后加载HTML，无兼容性，支持使用js改变样式</p>
+    <p>@import，先加载HTML，后加载CSS，在css2.1以下浏览器不支持</p>
+    <h2>css reset的作用</h2>
+    <p>因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异，通过reset重置浏览器的css默认属性，让它们统一</p>
+    <h2>常用布局有哪些？</h2>
+    <ul>
+        <li>一列布局</li>
+        <li>两列布局</li>
+        <li>三列布局</li>
+        <li>多列布局</li>
+        <li>双飞翼布局</li>
+        <li>流式布局</li>
+    </ul>
+    <h2>如何对网站进行优化?</h2>
+    <ul>
+        <li>js,css压缩</li>
+        <li>使用CDN托管</li>
+        <li>缓存DOM节点查找的结果</li>
+        <li>图片预加载</li>
+        <li>少用全局变量</li>
+        <li>减少http请求，使用css spirit</li>
+        <li>用setTimeout避免页面失去响应</li>
+    </ul>
+    <h2>使用过哪些预编辑器？为什么要用？</h2>
+    <p>使用过Less、SASS，可以解决很多自动化问题，方便定义css控制结构，统一设置浏览器前缀，使得CSS更方便编写与维护。</p>
+    <h2>清除浮动几种方式，各自的优缺点</h2>
+    <ul>
+        <li>使用空标签清除浮动(增加无意义标签)</li>
+        <li>使用overflow:auto(需要加zoom:1或width:100%用于兼容IE6，可能对页面造成影响)</li>
+        <li>用afert伪元素清除浮动(仅限于非IE浏览器)</li>
+    </ul>
+    <h2>IE6浏览器兼容性举例</h2>
+    <ul>
+        <li>双边距BUG float引起的，在相应块元素使用display:inline</li>
+        <li>使用浮动引起的3像素问题，使用margin-left:-3px;</li>
+        <li>z-index问题，给父级加position:relative</li>
+        <li>超链接hover点击后失效，使用正确的书写顺序：link visited hover active </li>
+        <li>png透明，用js辅助</li>
+        <li>-min-height最小宽度无效，用!important解决</li>
+    </ul>
+    <h2>DOM操作，如何添加 删除 替换 插入到某个接点的方法</h2>
+    <ul>
+        <li>obj.appendChidl()</li>
+        <li>obj.innersetBefore</li>
+        <li>obj.replaceChild</li>
+        <li>obj.removeChild</li>
+    </ul>
+    <h2>==”和“===”的不同</h2>
+    <p>前者会自动转换类型，后者不会</p>
+    <h2>ECMAScript6新增</h2>
+    <ul>
+        <li>let和const命令</li>
+        <li>变量的解构赋值</li>
+        <li>字符串的扩展</li>
+        <li>数值的扩展</li>
+        <li>对象的扩展</li>
+        <li>函数的扩展</li>
+        <li>Set和Map数据结构</li>
+        <li>Iterator和for...of循环</li>
+        <li>Generator函数</li>
+        <li>Promise对象</li>
+        <li>Class和Module</li>
+    </ul>
+    <h2>ajax中get和post的区别</h2>
+    <p>get一般用于获取数据，post一般用于传送数据</p>
+    <p>get有字节限制，post没有</p>
+    <p>post隐士传值更安全</p>
+    <h2>常见设计模式</h2>
+    <ul>
+        <li>策略模式</li>
+        <li>装饰者模式</li>
+        <li>代理模式</li>
+        <li>工厂模式</li>
+        <li>模板模式</li>
+        <li>外观模式</li>
+        <li>建造者模式</li>
+        <li>观察者模式</li>
+        <li>抽象工厂模式</li>
+        <li>适配器模式</li>
+        <li>单例模式</li>
+        <li>命令模式</li>
+    </ul>
+    <h2>对this的理解，可以列举几种使用情况？</h2>
+    <p>this，谁调用就指向谁，通过call/apply可以改变this指向</p>
+    <ul>
+        <li>一般情况下的this</li>
+        <li>对象调用中的this</li>
+        <li>函数调用中的this</li>
+        <li>dom对象中的this</li>
+    </ul>
+    <p></p>
+    <h2>对闭包的理解</h2>
+    <p>闭包是可以访问另一个函数作用域的函数。如果需要在函数外部调用函数内部变量，那就需要用到闭包，但是闭包会使得函数的变量保存在内存中，使得内存消耗大，使用不当很容易造成内存泄露</p>
+    <pre><code>
+//简单例子：getscope函数就是一个闭包
+function checkscope(){
+    var a=1;
+    function getscope(){
+        a++;
+        return a;
+    }
+    return getscope;
+}
+alert(checkscope()());</code></pre>
+    <h2>描述一下创建一个新网页的过程?</h2>
+    <ol>
+    	<li>设计师出设计稿</li>
+    	<li>按团队规范部署结构</li>
+    	<li>前端切图做页面</li>
+    	<li>开发人员嵌入程序</li>
+    	<li>性能优化和安全检测</li>
+    </ol>
+    <h2>cookie 和session 的区别</h2>
+    <p>cookie数据存放在客户的浏览器上，session数据放在服务器上，考虑到安全应当使用session。考虑到减轻服务器性能方面，则应当使用COOKIE。</p>
+    <h2>对JSON的了解?</h2>
+    <p>JSON是一种数据交换格式，易于读写, 占用带宽小,跟XML和HTML相比更简单更灵活。</p>
+    <pre><code>{'age':'12', 'name':'back'}</code></pre>
+    <h2>null和undefined的区别？</h2>
+    <p>null是一个表示"无"的对象，转为数值时为0；undefined是一个表示"无"的原始值，转为数值时为NaN。</p>
+    <h2>如何看待前端？</h2>
+    <p>作为一名前端，除了能把页面布局出来，还应该懂得网站性能优化、SEO和服务端基础知识，学会用各种工具辅助开发。</p>
+    <p>前端的框架、库都不断在更新和新增，需要不断的学习和积累。</p>
+</body>
+
+</html>

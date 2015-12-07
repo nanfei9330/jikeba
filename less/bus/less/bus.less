@@ -1,0 +1,225 @@
+@color-red: #C12C30;
+@color-green: #268862;
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Microsoft YaHei";
+}
+
+li {
+    list-style: none;
+}
+
+p,
+ul,
+h1 {
+    margin: 0;
+    padding: 0
+}
+
+.fl {
+    float: left;
+}
+
+
+/*font num*/
+
+.f-num2 {
+    height: 226px;
+}
+
+.f-num3 {
+    height: 170px;
+}
+
+.f-num4 {
+    height: 151px;
+}
+
+.f-num5 {
+    height: 141px;
+}
+
+.f-num6 {
+    height: 136px;
+}
+
+.f-num7 {
+    height: 133px;
+}
+
+.f-num8 {
+    height: 129px;
+}
+
+.bus-stop {
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px 30px 0;
+    position: relative;
+    border-bottom: 10px solid #aaa;
+    .title {
+        color: @color-red;
+        font-family: "\5B8B\4F53";
+        font-size: 28px;
+        font-weight: bold;
+        width: 422px;
+        text-align: center;
+        padding-left: 122px;
+        line-height: 58px;
+    }
+    .tip {
+        overflow: hidden;
+        width: 100%;
+        height: 65px;
+    }
+    .plate {
+        width: 546px;
+        box-sizing: border-box;
+        overflow: hidden;
+        height: 332px;
+        position: relative;
+        margin: 0 auto;
+        background: #fff;
+        border: 1px solid #aaa;
+        border-bottom: none;
+        border-bottom: 3px solid #bbb;
+        box-shadow: inset 0 0 5px #bbb;
+        .logo {
+            position: relative;
+            top: 13px;
+            left: 30px;
+            .round {
+                background: @color-green;
+                font-weight: bold;
+                border-radius: 30px;
+                width: 30px;
+                height: 35px;
+                position: absolute;
+                color: #fff;
+                font-style: italic;
+                padding-left: 5px;
+                line-height: 35px;
+                font-size: 18px;
+                em {
+                    font-size: 15px;
+                }
+                .line {
+                    width: 34px;
+                    height: 1px;
+                    background: #fff;
+                    position: absolute;
+                    bottom: 8px;
+                    left: 2px;
+                }
+            }
+        }
+        .bus-num {
+            width: 122px;
+            height: 65px;
+            background: @color-red;
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            line-height: 50px;
+            .num {
+                font-size: 50px;
+                padding-right: 5px;
+                font-weight: bold;
+                position: relative;
+                top: 5px;
+            }
+        }
+        .bus-route {
+            width: 422px;
+            margin-top: -15px;
+            letter-spacing: 4px;
+            .bus-route-name {
+                color: @color-green;
+                font-size: 28px;
+                text-align: center;
+                .line {
+                    line-height: 60px;
+                    padding: 0 10px;
+                    font-size: 49px;
+                }
+                p {
+                    display: inline-block;
+                    text-align: center;
+                    font-size: 22px;
+                    line-height: 16px;
+                    span {
+                        font-size: 12px;
+                        font-weight: normal;
+                        font-family: Arial;
+                        font-weight: bold;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+            .next-station {
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+        .route-des {
+            height: 134px;
+            margin-top: 10px;
+            padding: 10px;
+            background: linear-gradient(315deg, #21835c, #0c7648);
+            color: #fff;
+            width: 100%;
+            overflow: hidden;
+            .here {
+                color: #e8cc69;
+            }
+            li {
+                float: left;
+                margin-right: 4px;
+                width: 12px;
+                font-size: 12px;
+                display: flex;
+                flex-direction: column;
+                span {
+                    display: block;
+                    flex: 1;
+                }
+            }
+        }
+    }
+    /*bottom pillar*/
+    .pillar {
+        height: 300px;
+        width: 43px;
+        background: red;
+        margin: 0 auto;
+        background: linear-gradient(to right, #969F9A, #2D2B2E, #EFF1E6, #757374);
+        ;
+    }
+    .time {
+        text-align: center;
+        margin: 0 50px 0 20px;
+        p {
+            line-height: 30px;
+            font-size: 14px;
+        }
+        .arrow {
+            position: relative;
+            .line {
+                height: 5px;
+                background: @color-red;
+            }
+            .triangle {
+                width: 0;
+                height: 0;
+                border: 10px solid @color-red;
+                border-width: 18px 24px 0px 88px;
+                position: absolute;
+                top: 0;
+                right: -48px;
+                margin-top: -13px;
+                border-color: transparent transparent @color-red @color-red;
+            }
+        }
+    }
+}

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度登录后</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="/widget/index/css/style.css">
+        <!--width < 800 link style-phone.css-->
+    <link rel="stylesheet" href="/widget/index/css/style-phone.css" media="screen and (max-width:800px)" />
+<script type="text/javascript" src="/lib/js/jquery-1.3.2.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper" id="pc">
+        <!--头部导航 加上usertop为登录后显示效果 -->
+        <nav class="top usertop">
+            <div class="head">
+                <div class="leftnav">
+                    <div class="weather">
+                        <iframe width="170" scrolling="no" height="18" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=1&icon=1&wind=1&num=2"></iframe>
+                    </div>
+                    <div class="u_sp">
+                        <span class="show-vertical">|</span>
+                        <a href="#">宝箱</a>
+                        <a href="#">换肤</a>
+                        <a href="#">消息<span id="s_msg_count">(2)</span></a>
+                    </div>
+                </div>
+                <div class="rightnav">
+                    <a href="#">新闻</a>
+                    <a href="#">hao123</a>
+                    <a href="#">地图</a>
+                    <a href="#">视频</a>
+                    <a href="#">贴吧</a>
+                    <a href="#" class="login" onclick="return false;" id="lg">登录</a>
+                    <!-- 已登录 -->
+                    <div class="setmenu" id="s_username_top">
+                        <dl>
+                            <dt>roro5119</dt>
+                            <dd>
+                                <em></em>
+                                <a href="#">我的VIP</a>
+                                <a href="#">个人中心</a>
+                                <a href="#">帐号设置</a>
+                                <a href="#">意见反馈</a>
+                                <a href="#">退出</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <!-- 顶部设置菜单 -->
+                    <div class="setmenu">
+                        <dl>
+                            <dt>设置</dt>
+                            <dd>
+                                <em></em>
+                                <a href="#">搜索设置</a>
+                                <a href="#">高级搜索</a>
+                                <a href="#">关闭预测</a>
+                                <a href="#">搜索历史</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <a href="#" class="moreproduct">更多产品</a>
+                </div>
+            </div>
+        </nav>
+        <!--中部表单 -->
+        <section class="main usermain">
+            <div class="logo">
+                <img src="/lib/img/bdlogo.png" alt="百度LOGO" width="270" height="129">
+            </div>
+            <div class="form">
+                <form action="#" method="get" name="form">
+                    <input type="text" value="" name="keywords" class="keywords" autocomplete="off" autofocus="autofocus" x-webkit-speech />
+                    <input type="submit" value="百度一下" class="submit">
+                </form>
+            </div>
+            <!-- 登录后用户模块 -->
+            <div id="user-model">
+                <div class="user-menu">
+                    <ul>
+                        <li><a href="#" class="current" data-tid="1">导航</a></li>
+                        <li><a href="#" data-tid="2">新闻</a></li>
+                        <li><a href="#" data-tid="3">购物</a></li>
+                    </ul>
+                    <div class="menu-add">
+                        <a href="#"><span></span></a>
+                    </div>
+                </div>
+                <div class="model-wrap">
+                    <div class="model-con">
+                        <!-- 导航模块内容 -->
+                        <div id="model-1" class="s-content s-navigation">
+                            <div id="s_nall_tabs"><a href="#" class="tab tab-nav tab-on">我的导航</a><a href="#" class="tab tab-used">推荐导航</a></div>
+                            <div class="s-nav-opts"><a href="#" class="edit">编辑</a><a href="#" class="add">添加</a></div>
+                            <div id="s_nall_tabs_con">
+                                <div class="inner s-nori-navs">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/7018.png" width="16" height="16"><span>58同城网</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/6000.png" width="16" height="16"><span>搞笑吧</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/712.png" width="16" height="16"><span>CSDN</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/7752.png" width="16" height="16"><span>百度统计</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/9933.png" width="16" height="16"><span>电驴</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/8215.png" width="16" height="16"><span>爱问共享</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/7212.png" width="16" height="16"><span>天天网</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/10421.png" width="16" height="16"><span>广东移动</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/7788.png" width="16" height="16"><span>百姓网</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/2556.png" width="16" height="16"><span>百度文库</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/95498.png" width="16" height="16"><span>百度百科</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/6000.png" width="16" height="16"><span>搞笑吧</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/6000.png" width="16" height="16"><span>搞笑吧</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/6000.png" width="16" height="16"><span>搞笑吧</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/6000.png" width="16" height="16"><span>搞笑吧</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/6000.png" width="16" height="16"><span>搞笑吧</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/6000.png" width="16" height="16"><span>搞笑吧</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/6000.png" width="16" height="16"><span>搞笑吧</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/6000.png" width="16" height="16"><span>搞笑吧</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/6000.png" width="16" height="16"><span>搞笑吧</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/6000.png" width="16" height="16"><span>搞笑吧</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/6000.png" width="16" height="16"><span>搞笑吧</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/6000.png" width="16" height="16"><span>搞笑吧</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/6000.png" width="16" height="16"><span>搞笑吧</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/6000.png" width="16" height="16"><span>搞笑吧</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="/lib/img/6000.png" width="16" height="16"><span>搞笑吧</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="inner s-nused" style="display:none;">
+                                    <div class="hot-title">
+                                        热门网址
+                                    </div>
+                                    <div class="s-hot-area">
+                                        <a href="#" title="网站名称"><img src="/lib/img/7.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/101.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/102.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/108.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/116.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/120.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/121.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/125.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/129.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/132.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/143.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/144.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/145.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/146.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/147.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/149.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/164.png"></a>
+                                        <a href="#" title="网站名称"><img src="/lib/img/165.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 新闻模块内容 -->
+                        <div id="model-2" class="s-content s-news">
+                            <div class="s-news-img-ctner">
+                                <div class="img-viewer">
+                                    <div class="img-viewer-cell">
+                                        <!-- 新闻预览图位置  -->
+                                    </div>
+                                </div>
+                                <div class="change-bigimg pre-img"><span class="arrow"></span></div>
+                                <div class="change-bigimg next-img"><span class="arrow"></span></div>
+                                <a href="#" class="img-title">安徽十岁孩子欲带病母千里探监看父亲</a>
+                                <div class="img-title-mask"></div>
+                                <div class="img-bars-wrapper">
+                                    <div class="img-bars-content">
+                                        <!-- 小预览图位置 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hot-words">
+                                <div class="hot-title"><a href="#" class="hot-link"><em></em>搜索风云榜</a><a href="#" class="title-change-words"><span class="bg"></span>换一换</a></div>
+                                <div class="hot-content-cell">
+                                    <ul>
+                                        <li><a href="#"><em class="dot"></em>女子将男友毁容</a></li>
+                                        <li><a href="#"><em class="dot"></em>盗墓贼专偷女盖骨</a></li>
+                                        <li><a href="#"><em class="dot"></em>甄子丹晒练功照</a></li>
+                                        <li><a href="#"><em class="dot"></em>急诊4毛钱药治病</a></li>
+                                        <li><a href="#"><em class="dot"></em>酒店话梅按颗卖</a></li>
+                                        <li><a href="#"><em class="dot"></em>田华儿子去世</a></li>
+                                        <li><a href="#"><em class="dot"></em>烧香求平安遇车祸</a></li>
+                                        <li><a href="#"><em class="dot"></em>年轻女打伤老太</a></li>
+                                        <li><a href="#"><em class="dot"></em>杜海涛沈梦辰分手</a></li>
+                                        <li><a href="#"><em class="dot"></em>盗墓贼专偷女盖骨</a></li>
+                                        <li><a href="#"><em class="dot"></em>自拍撞上收割机</a></li>
+                                        <li><a href="#"><em class="dot"></em>民企强扣工资</a></li>
+                                        <li><a href="#"><em class="dot"></em>悍匪黑桃A受审</a></li>
+                                        <li><a href="#"><em class="dot"></em>女官员挪用400万</a></li>
+                                        <li><a href="#"><em class="dot"></em>70周年纪念币</a></li>
+                                        <li><a href="#"><em class="dot"></em>范冰冰祝福张靓颖</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 购物模块内容 -->
+                        <div id="model-3" class="s-content s-gbuy">
+                            <div class="s-gbuy-hd"><a href="#" class="tab tab-on">今日优选</a><a href="#" class="tab">美食</a><a href="#" class="tab">电影</a></div>
+                            <div class="s-gbuy-opts">
+                                <span class="gbuy-user-tit">我的账户 <i></i></span>
+                                <div class="gbuy-user-list">
+                                    <a href="#">我的订单</a>
+                                    <a href="#">我的积分</a>
+                                </div>
+                                <a href="#" class="more">查看更多</a>
+                            </div>
+                            <div class="s-gbuy-con">
+                                <!-- 今日优选内容 -->
+                                <div class="inner" id="s-gbuy-youxuan">
+                                    <!-- 今日优选内容-左 -->
+                                    <div class="s-gbuy-orders">
+                                        <!-- 一个商品 -->
+                                        <div class="s-gbuy-item">
+                                            <a href="#"><img src="/lib/img/472309f790529822e398ab57d1ca7bcb0b46d4ff.jpg"></a>
+                                            <div class="gbuy-detail">
+                                                <div class="gbuy-detail-left">
+                                                    <a href="#">下单返现 爆款线控耳机爆款线控耳机爆款线控耳机</a>
+                                                    <p class="persion">购买后返<em>22.05</em></p>
+                                                </div>
+                                                <div class="price">￥<em>49</em></div>
+                                            </div>
+                                        </div>
+                                        <!-- 一个商品结束 -->
+                                        <div class="s-gbuy-item">
+                                            <a href="#"><img src="/lib/img/472309f790529822e398ab57d1ca7bcb0b46d4ff.jpg"></a>
+                                            <div class="gbuy-detail">
+                                                <div class="gbuy-detail-left">
+                                                    <a href="#">下单返现 爆款线控耳机爆款线控耳机爆款线控耳机</a>
+                                                    <p class="persion">购买后返<em>22.05</em></p>
+                                                </div>
+                                                <div class="price">￥<em>49</em></div>
+                                            </div>
+                                        </div>
+                                        <div class="s-gbuy-item">
+                                            <a href="#"><img src="/lib/img/472309f790529822e398ab57d1ca7bcb0b46d4ff.jpg"></a>
+                                            <div class="gbuy-detail">
+                                                <div class="gbuy-detail-left">
+                                                    <a href="#">下单返现 爆款线控耳机爆款线控耳机爆款线控耳机</a>
+                                                    <p class="persion">购买后返<em>22.05</em></p>
+                                                </div>
+                                                <div class="price">￥<em>49</em></div>
+                                            </div>
+                                        </div>
+                                        <div class="s-gbuy-item">
+                                            <a href="#"><img src="/lib/img/472309f790529822e398ab57d1ca7bcb0b46d4ff.jpg"></a>
+                                            <div class="gbuy-detail">
+                                                <div class="gbuy-detail-left">
+                                                    <a href="#">下单返现 爆款线控耳机爆款线控耳机爆款线控耳机</a>
+                                                    <p class="persion">购买后返<em>22.05</em></p>
+                                                </div>
+                                                <div class="price">￥<em>49</em></div>
+                                            </div>
+                                        </div>
+                                        <div class="s-gbuy-item">
+                                            <a href="#"><img src="/lib/img/472309f790529822e398ab57d1ca7bcb0b46d4ff.jpg"></a>
+                                            <div class="gbuy-detail">
+                                                <div class="gbuy-detail-left">
+                                                    <a href="#">下单返现 爆款线控耳机爆款线控耳机爆款线控耳机</a>
+                                                    <p class="persion">购买后返<em>22.05</em></p>
+                                                </div>
+                                                <div class="price">￥<em>49</em></div>
+                                            </div>
+                                        </div>
+                                        <div class="s-gbuy-item">
+                                            <a href="#"><img src="/lib/img/472309f790529822e398ab57d1ca7bcb0b46d4ff.jpg"></a>
+                                            <div class="gbuy-detail">
+                                                <div class="gbuy-detail-left">
+                                                    <a href="#">下单返现 爆款线控耳机爆款线控耳机爆款线控耳机</a>
+                                                    <p class="persion">购买后返<em>22.05</em></p>
+                                                </div>
+                                                <div class="price">￥<em>49</em></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 今日优选内容-右 -->
+                                    <div class="s-gbuy-sidebar">
+                                        <div class="gbuy-activity-cont">
+                                            <div class="gbuy-activity">
+                                                <div class="gbuy-act-tit">
+                                                    <a href="#">超级返-玛萨玛索男装专场</a>
+                                                </div>
+                                                <div class="gbuy-act-desc"><a href="#">全网返利50%</a></div>
+                                            </div>
+                                            <div class="gbuy-section">
+                                                <h3>返利商城</h3>
+                                                <div class="s-gbuy-rec">
+                                                    <a href="#">百度糯米</a><a href="#">京东商城</a><a href="#">当当</a><a href="#">1号店</a><a href="#">苏宁易购</a><a href="#" class="hot-more-link">更多</a>
+                                                </div>
+                                            </div>
+                                            <div class="gbuy-section">
+                                                <h3>返利商城</h3>
+                                                <div class="s-gbuy-rec">
+                                                    <a href="#">百度糯米</a><a href="#">京东商城</a><a href="#">当当</a><a href="#">1号店</a><a href="#">苏宁易购</a><a href="#" class="hot-more-link">更多</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 美食 -->
+                                <div class="inner" id="s-gbuy-meishi" style="display:none;">
+                                    <!-- 美食-左 -->
+                                    <div class="s-gbuy-orders">
+                                        <!-- 一个商品 -->
+                                        <div class="s-gbuy-item">
+                                            <a href="#"><img src="/lib/img/728da9773912b31b37cf85b48318367adbb4e188.jpg"></a>
+                                            <div class="gbuy-detail">
+                                                <div class="gbuy-detail-left">
+                                                    <a href="#">下单返现 爆款线控耳机爆款线控耳机爆款线控耳机</a>
+                                                    <p class="persion">购买后返<em>22.05</em></p>
+                                                </div>
+                                                <div class="price">￥<em>49</em></div>
+                                            </div>
+                                            <span class="gbuy-ico-reserve">免预约</span>
+                                        </div>
+                                        <!-- 一个商品结束 -->
+                                        <div class="s-gbuy-item">
+                                            <a href="#"><img src="/lib/img/728da9773912b31b37cf85b48318367adbb4e188.jpg"></a>
+                                            <div class="gbuy-detail">
+                                                <div class="gbuy-detail-left">
+                                                    <a href="#">下单返现 爆款线控耳机爆款线控耳机爆款线控耳机</a>
+                                                    <p class="persion">购买后返<em>22.05</em></p>
+                                                </div>
+                                                <div class="price">￥<em>49</em></div>
+                                            </div>
+                                            <span class="gbuy-ico-reserve">免预约</span>
+                                        </div>
+                                        <div class="s-gbuy-item">
+                                            <a href="#"><img src="/lib/img/728da9773912b31b37cf85b48318367adbb4e188.jpg"></a>
+                                            <div class="gbuy-detail">
+                                                <div class="gbuy-detail-left">
+                                                    <a href="#">下单返现 爆款线控耳机爆款线控耳机爆款线控耳机</a>
+                                                    <p class="persion">购买后返<em>22.05</em></p>
+                                                </div>
+                                                <div class="price">￥<em>49</em></div>
+                                            </div>
+                                            <span class="gbuy-ico-reserve">免预约</span>
+                                        </div>
+                                        <div class="s-gbuy-item">
+                                            <a href="#"><img src="/lib/img/728da9773912b31b37cf85b48318367adbb4e188.jpg"></a>
+                                            <div class="gbuy-detail">
+                                                <div class="gbuy-detail-left">
+                                                    <a href="#">下单返现 爆款线控耳机爆款线控耳机爆款线控耳机</a>
+                                                    <p class="persion">购买后返<em>22.05</em></p>
+                                                </div>
+                                                <div class="price">￥<em>49</em></div>
+                                            </div>
+                                            <span class="gbuy-ico-reserve">免预约</span>
+                                        </div>
+                                        <div class="s-gbuy-item">
+                                            <a href="#"><img src="/lib/img/728da9773912b31b37cf85b48318367adbb4e188.jpg"></a>
+                                            <div class="gbuy-detail">
+                                                <div class="gbuy-detail-left">
+                                                    <a href="#">下单返现 爆款线控耳机爆款线控耳机爆款线控耳机</a>
+                                                    <p class="persion">购买后返<em>22.05</em></p>
+                                                </div>
+                                                <div class="price">￥<em>49</em></div>
+                                            </div>
+                                            <span class="gbuy-ico-reserve">免预约</span>
+                                        </div>
+                                        <div class="s-gbuy-item">
+                                            <a href="#"><img src="/lib/img/728da9773912b31b37cf85b48318367adbb4e188.jpg"></a>
+                                            <div class="gbuy-detail">
+                                                <div class="gbuy-detail-left">
+                                                    <a href="#">下单返现 爆款线控耳机爆款线控耳机爆款线控耳机</a>
+                                                    <p class="persion">购买后返<em>22.05</em></p>
+                                                </div>
+                                                <div class="price">￥<em>49</em></div>
+                                            </div>
+                                            <span class="gbuy-ico-reserve">免预约</span>
+                                        </div>
+                                    </div>
+                                    <!-- 美食-右 -->
+                                    <div class="s-gbuy-sidebar">
+                                        <div class="gbuy-activity-cont">
+                                            <div class="gbuy-activity">
+                                                <div class="gbuy-act-tit">
+                                                    <a href="#">超级返-玛萨玛索男装专场</a>
+                                                </div>
+                                                <div class="gbuy-act-desc"><a href="#">全网返利50%</a></div>
+                                            </div>
+                                            <div class="gbuy-section">
+                                                <h3>热卖分类</h3>
+                                                <div class="s-gbuy-rec">
+                                                    <a href="#">全部中餐</a><a href="#">甜点饮品</a><a href="#">小吃快餐</a><a href="#">粤菜</a><a href="#">其他美食</a><a href="#" class="hot-more-link">更多分类</a>
+                                                </div>
+                                            </div>
+                                            <div class="gbuy-section">
+                                                <h3>热门商圈</h3>
+                                                <div class="s-gbuy-rec">
+                                                    <a href="#">黄埔区</a><a href="#">天河区</a><a href="#">白云区</a><a href="#">海珠区</a><a href="#">番禺区</a><a href="#" class="hot-more-link">更多商圈</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 电影 -->
+                                <div class="inner" id="s-gbuy-movie" style="display:none;">
+                                    <div class="s-gbuy-orders">
+                                        <div class="s-movie-item">
+                                            <div class="s-movie-img">
+                                                <a href="#"><img src="/lib/img/m.jpg"></a>
+                                            </div>
+                                            <div class="s-movie-detail">
+                                                <h3>黑猫警长之翡翠之星</h3>
+                                                <span class="s-movie-score">
+                <span class="s-movie-star" style="width:45.6px"></span>
+                                                <span class="s-movie-grade">7.6</span>
+                                                </span>
+                                                <a href="#" class="s-movie-btn">购票</a>
+                                            </div>
+                                        </div>
+                                        <div class="s-movie-item">
+                                            <div class="s-movie-img">
+                                                <a href="#"><img src="/lib/img/m2.jpg"></a>
+                                            </div>
+                                            <div class="s-movie-detail">
+                                                <h3>黑猫警长之翡翠之星</h3>
+                                                <span class="s-movie-score">
+                <span class="s-movie-star" style="width:33px"></span>
+                                                <span class="s-movie-grade">5.5</span>
+                                                </span>
+                                                <a href="#" class="s-movie-btn">购票</a>
+                                            </div>
+                                        </div>
+                                        <div class="s-movie-item">
+                                            <div class="s-movie-img">
+                                                <a href="#"><img src="/lib/img/m.jpg"></a>
+                                            </div>
+                                            <div class="s-movie-detail">
+                                                <h3>黑猫警长之翡翠之星</h3>
+                                                <span class="s-movie-score">
+                <span class="s-movie-star" style="width:45.6px"></span>
+                                                <span class="s-movie-grade">7.6</span>
+                                                </span>
+                                                <a href="#" class="s-movie-btn">购票</a>
+                                            </div>
+                                        </div>
+                                        <div class="s-movie-item">
+                                            <div class="s-movie-img">
+                                                <a href="#"><img src="/lib/img/m.jpg"></a>
+                                            </div>
+                                            <div class="s-movie-detail">
+                                                <h3>黑猫警长之翡翠之星</h3>
+                                                <span class="s-movie-score">
+                <span class="s-movie-star" style="width:45.6px"></span>
+                                                <span class="s-movie-grade">7.6</span>
+                                                </span>
+                                                <a href="#" class="s-movie-btn">购票</a>
+                                            </div>
+                                        </div>
+                                        <div class="s-movie-item">
+                                            <div class="s-movie-img">
+                                                <a href="#"><img src="/lib/img/m.jpg"></a>
+                                            </div>
+                                            <div class="s-movie-detail">
+                                                <h3>黑猫警长之翡翠之星</h3>
+                                                <span class="s-movie-score">
+                <span class="s-movie-star" style="width:45.6px"></span>
+                                                <span class="s-movie-grade">7.6</span>
+                                                </span>
+                                                <a href="#" class="s-movie-btn">购票</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s-gbuy-sidebar">
+                                        <div class="gbuy-section">
+                                            <h3>找影院</h3>
+                                            <div class="s-gbuy-rec">
+                                                <a href="#">星美国际影城</a><a href="#">UME国际影城</a><a href="#">橙天嘉禾影城</a><a href="#" class="hot-more-link">更多影院</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 这里 -->
+            </div>
+        </section>
+        <!--底部 -->
+        <footer class="footer" style="display:none;">
+            <p class="foot_link">
+                <a href="#">把百度设为主页</a>
+                <a href="#">关于百度</a>
+                <a href="#">About&nbsp;&nbsp;Baidu</a>
+            </p>
+            <p class="info_text">
+                ©2015 Baidu <a href="#">使用百度前必读</a>&nbsp;
+                <a href="#">意见反馈</a> 京ICP证030173号 <i class="ico"></i>
+            </p>
+        </footer>
+        <div class="tj_link_wrapper">
+            <div class="tj_link">
+                <div class="tj_title">更多产品</div>
+                <a href="#" class="tj_nuomi"><span class="tj_img"></span>糯米</a>
+                <a href="#" class="tj_zhidao"><span class="tj_img"></span>知道</a>
+                <a href="#" class="tj_yinyue"><span class="tj_img"></span>音乐</a>
+                <a href="#" class="tj_tupian"><span class="tj_img"></span>图片</a>
+                <a href="#" class="tj_wenku"><span class="tj_img"></span>文库</a>
+                <a href="#" class="tj_top"><span class="tj_img"></span>风云榜</a>
+                <a href="#" class="tj_baidu"><span class="tj_img"></span>百度推广</a>
+            </div>
+        </div>
+    </div>
+    <!--phone show-->
+    <div id="page">
+        <header id="header">
+            <div class="userinfo">
+                <a href="#" class="login">
+                    roro
+                </a>
+            </div>
+            <div class="logo">
+                <img src="/lib/img/plus_logo.png" alt="百度一下,你就知道" width="175" height="55" />
+            </div>
+            <form action="" method="get">
+                <div class="con-wrap">
+                    <input type="text" name="keywords" class="keywords" autocomplete="off" />
+                    <input type="submit" value="百度一下" class="search-btn" />
+                </div>
+            </form>
+            <div class="nav">
+                <a href="#">
+                    <i class="ico-news"></i> 新闻
+                </a>
+                <a href="#">
+                    <i class="ico-novel"></i> 小说
+                </a>
+                <a href="#">
+                    <i class="ico-video"></i> 视频
+                </a>
+                <a href="#">
+                    <i class="ico-life"></i> 生活
+                </a>
+                <a href="#">
+                    <i class="ico-map"></i> 地图
+                </a>
+                <a href="#">
+                    <i class="ico-more"></i> 更多
+                </a>
+            </div>
+        </header>
+        <!--新闻导航-->
+        <div id="news-tab">
+            <div class="title">
+                <div class="normal-title">
+                    <span class="icon-title"></span>
+                    <h2>实时热点</h2>
+                </div>
+                <a class="refresh">
+                    <i class="icon-refresh"></i> 换一批
+                </a>
+                <a href="#" class="icon-edit"></a>
+            </div>
+            <ul class="new-con">
+                <li><a href="#" class="icon-hot">大别山现绿太阳鱼</a></li>
+                <li><a href="#" class="icon-hot">日本民众抗议安倍</a></li>
+                <li><a href="#" class="icon-hot">7块8廉价药难求</a></li>
+                <li><a href="#">周杰伦头长草卖萌</a></li>
+                <li><a href="#">男子不停存取10元</a></li>
+                <li><a href="#">瞒彩票奖逼妻离婚</a></li>
+            </ul>
+        </div>
+        <div id="control">
+            <a href="#"><i class="icon-control"></i>管理我的首页</a>
+        </div>
+        <footer id="bottom">
+            <ul>
+                <li><a href="#" class="icon-hot">百度浏览器，上网提速200%</a></li>
+                <li><a href="#" class="icon-app">手机百度，最省流量的极速搜索APP</a></li>
+                <li><a href="#" class="icon-hot">百度推广，让有需求的客户找到你</a></li>
+            </ul>
+            <div class="footlink">
+                <a href="#" class="jishu">极速版</a>
+                <a href="#" class="fankui">用户反馈</a>
+            </div>
+            <p class="index-copyright">使用百度前必读 Baidu 京ICP证030173号</p>
+        </footer>
+    </div>
+    <!-- 登录弹出内容 -->
+    <div class="alert_fullbg"></div>
+    <div id="login-box">
+        <div class="title"><span class="title-txt"></span>登录百度帐号 <span class="close"></span></div>
+        <!-- 帐号登录 -->
+        <div id="passport-login-pop-dialog">
+            <div id="pass-login-pop-form">
+                <p class="pass-sms-btn"><a href="#">短信快捷登录</a></p>
+                <form action="home.html" method="get" onsubmit="return ckform();">
+                    <div class="pass-form-item">
+                        <label class="pass-label-userName"></label>
+                        <input type="text" class="pass-text-input userName" placeholder="手机/邮箱/用户名">
+                        <span class="pass-clearbtn"></span>
+                    </div>
+                    <div class="pass-form-item">
+                        <label class="pass-form-item-password"></label>
+                        <input type="text" class="pass-text-input" placeholder="密码">
+                    </div>
+                    <div class="pass-item-selectbtn">
+                        <p class="l">
+                            <input type="checkbox" name="rmemberPass" id="rmemberPass">
+                            <label for="rmemberPass">下次自动登录</label>
+                        </p>
+                        <a href="#" class="pass-fgtpwd">忘记密码?</a>
+                    </div>
+                    <div class="pass-form-item-submit">
+                        <input type="submit" class="pass-button-submit" value="登录">
+                    </div>
+                    <p>
+                        <a href="#" class="register">立即注册</a>
+                    </p>
+                </form>
+                <div id="pass-phoenix-login">
+                    <div class="pass-phoenix-title">可以使用以下方式登录</div>
+                    <ul>
+                        <li class="bd-acc-qq"><a href="#">QQ帐号</a></li>
+                        <li class="bd-acc-tsina"><a href="#">QQ帐号</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 二维码 -->
+            <div id="qrcodeContent">
+                <div class="tang-pass-qrcode-title">手机扫描，安全登录</div>
+                <div class="tang-pass-qrcode-imgWrapper">
+                    <img src="/lib/img/qrcode.png" width="123" height="123">
+                </div>
+                <p class="tang-pass-qrcode-info">请使用<a href="#">手机百度app</a>扫描登录</p>
+            </div>
+        </div>
+        <!-- 右下角切换 -->
+        <div class="tang-pass-pop-login-changeWrapper" data-type="normal">
+        </div>
+    </div>
+
+  <script type="text/javascript" src="/modules/index/news.js"></script>
+    <script type="text/javascript" src="/modules/index/normal.js"></script>
+     <script type="text/javascript" src="/modules/index/tab.js"></script>
+</body>
+
+</html>

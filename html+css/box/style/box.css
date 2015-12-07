@@ -1,0 +1,161 @@
+/*盒子模型*/
+
+.bag {
+    box-shadow: 0 0 10px #000;
+    width: 130px;
+    height: 130px;
+    margin: 100px;
+}
+
+.bag .shoes_box {
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background: #FE6403;
+    border: 5px solid #02C3F5;
+}
+
+.bag .shoes_box .shoes {
+    width: 100px;
+    height: 100px;
+    background: #F69A0B;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+/*怪异盒模型*/
+
+.bag1 {
+    box-shadow: 0 0 10px #000;
+    width: 130px;
+    height: 130px;
+    margin: 100px;
+}
+
+.bag1 .shoes_box1 {
+    padding: 10px;
+    width: 130px;
+    height: 130px;
+    background: #FE6403;
+    border: 5px solid #02C3F5;
+    box-sizing: border-box;
+}
+
+.bag1 .shoes_box1 .shoes1 {
+    width: 100px;
+    height: 100px;
+    background: #F69A0B;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+/*********弹性盒模型********/
+
+
+/*多栏布局*/
+
+.box_elastic {
+    margin: 50px 0;
+    background: #ccc;
+    padding: 10px;
+    width: 600px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+
+    /*老师~这个设了，页面效果怎么不是隔开40px呢*/
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+}
+
+
+/*图片居中*/
+
+.center {
+    margin: 50px 0;
+    width: 400px;
+    height: 500px;
+    background: #02C3F5;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    pack: center;
+}
+
+
+/*水平适配 1:2:1*/
+
+.flexbox {
+    margin-bottom: 50px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+}
+
+.flexbox .box1 {
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+    background: #F69A0B;
+}
+
+.flexbox .box2 {
+    -webkit-flex: 2;
+    -moz-flex: 2;
+    flex: 2;
+    background: #FE6403;
+}
+
+.flexbox .box3 {
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+    background: #02C3F5;
+}
+
+
+/*垂直适配 */
+
+.flexbox2 {
+    height: 500px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.flexbox2 .box1 {
+    background: #F69A0B;
+    -webkit-flex: 2;
+    -moz-flex: 2;
+    flex: 2;
+}
+
+.flexbox2 .box2 {
+    -webkit-flex: 3;
+    -moz-flex: 3;
+    flex: 3;
+    background: #FE6403;
+}
+
+.flexbox2 .box3 {
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+    background: #02C3F5;
+    -webkit-order: -1;
+    -moz-order: -1;
+    order: -1;
+}

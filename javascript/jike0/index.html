@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="zn-ch">
+
+<head>
+    <meta charset="UTF-8">
+    <title>极客学院-首页练习</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <script type="text/JavaScript" src="js/jquery.min.js"></script>
+    <!-- 
+版本3：
+1、修复合作院校栏目切换效果，
+2、补充上重要注释
+3、补充搜索框效果
+     -->
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header-wrapper">
+        <!-- 顶部 -->
+        <header id="header">
+            <a href="#top" class="logo"><img src="images/logo_c8caff4.png" alt="" alt="极客学院" width="113" height="41"></a>
+            <div class="search">
+                <form action="" method="get">
+                    <input type="text" value="" class="keywords" name="q" placeholder="搜索课程、问答或 Wiki" autocomplete="off">
+                    <input type="submit" class="search-btn" value="">
+                    <div class="hot-words">
+                        <a href="#">Android</a>
+                        <a href="#">iOS</a>
+                        <a href="#">HTML5</a>
+                    </div>
+                </form>
+            </div>
+            <!-- 右上角的用户下拉菜单 -->
+            <div class="loginbox">
+                <a href="#">我的课程</a><em>&nbsp;|&nbsp;</em>
+                <a href="#"><img src="images/vip-year_3ecca1f.png" alt="vip" width="50" height="15"></a>&nbsp;
+                <div class="user-menu">
+                    <a href="#">百战天虫<em class="arrow"></em></a>
+                    <div class="user-menu-menu">
+                        <i class="arrow"></i>
+                        <ul>
+                            <li><a href="#">个人主页</a></li>
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="#">我的课程</a></li>
+                            <li><a href="#">免费VIP</a></li>
+                            <li><a href="#">我的F码</a></li>
+                            <li><a href="#">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="nav-wrapper">
+    <!-- 顶部导航 -->
+        <nav id="nav">
+            <ul>
+                <li><a href="#" class="current">首页</a></li>
+                <li><a href="#">职业课程库</a></li>
+                <li><a href="#">知识体系图</a></li>
+                <li><a href="#">实战路径图</a></li>
+                <li><a href="#">技术问答</a></li>
+                <li><a href="#">Wiki</a></li>
+            </ul>
+            <!-- 导航右边的会员选项 -->
+            <div class="user-need">
+                <a href="#"><span class="vip"></span>VIP会员</a>
+                <a href="#"><span class="class"></span>求课程</a>
+                <a href="#"><span class="app"></span>客户端</a>
+            </div>
+        </nav>
+    </div>
+    <!-- 中部 -->
+    <div class="main">
+        <div class="part-one">
+            <!-- 左栏导航 -->
+            <div class="lesson-bar">
+                <ul>
+                    <!-- 移动开发 -->
+                    <li><a href="#">移动开发</a>
+                        <div class="lesson-show">
+                            <dl>
+                                <dt>应用开发</dt>
+                                <dd><a href="#">Android</a><a href="#">Android</a><a href="#">iOS</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>游戏开发</dt>
+                                <dd><a href="#">Cocos</a><a href="#">Unity3D</a><a href="#">SpriteKit 2D</a><a href="#">Unreal</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <!-- 前端开发 -->
+                    <li><a href="#">前端开发</a>
+                        <div class="lesson-show">
+                            <dl>
+                                <dt><a href="#">前端基础</a></dt>
+                                <dd><a href="#">HTML</a><a href="#">CSS</a><a href="#">JavaScript</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <!-- 后端开发 -->
+                    <li><a href="#">后端开发</a>
+                        <div class="lesson-show">
+                            <dl>
+                                <dt><a href="#">后端开发</a></dt>
+                                <dd><a href="#">HTML</a><a href="#">CSS</a><a href="#">JavaScript</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <!-- 其他 -->
+                    <li><a href="#">基础知识</a>
+                        <div class="lesson-show">
+                            <dl>
+                                <dt><a href="#">基础知识</a></dt>
+                                <dd><a href="#">HTML</a><a href="#">CSS</a><a href="#">JavaScript</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li><a href="#">云计算&大数据</a>
+                        <div class="lesson-show">
+                            <dl>
+                                <dt><a href="#">云计算&大数据</a></dt>
+                                <dd><a href="#">HTML</a><a href="#">CSS</a><a href="#">JavaScript</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li><a href="#">智能硬件&物联网</a>
+                        <div class="lesson-show">
+                            <dl>
+                                <dt><a href="#">智能硬件&物联网</a></dt>
+                                <dd><a href="#">HTML</a><a href="#">CSS</a><a href="#">JavaScript</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li><a href="#">数据库</a>
+                        <div class="lesson-show">
+                            <dl>
+                                <dt><a href="#">数据库</a></dt>
+                                <dd><a href="#">HTML</a><a href="#">CSS</a><a href="#">JavaScript</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li><a href="#">认证考试</a>
+                        <div class="lesson-show">
+                            <dl>
+                                <dt><a href="#">认证考试</a></dt>
+                                <dd><a href="#">HTML</a><a href="#">CSS</a><a href="#">JavaScript</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li><a href="#">企业 IT</a><div class="lesson-show">
+                            <dl>
+                                <dt><a href="#">企业 IT</a></dt>
+                                <dd><a href="#">HTML</a><a href="#">CSS</a><a href="#">JavaScript</a></dd>
+                            </dl>
+                        </div></li>
+                    <li><a href="#">软件测试</a><div class="lesson-show">
+                            <dl>
+                                <dt><a href="#">软件测试</a></dt>
+                                <dd><a href="#">HTML</a><a href="#">CSS</a><a href="#">JavaScript</a></dd>
+                            </dl>
+                        </div></li>
+                    <li><a href="#">设计&产品</a><div class="lesson-show">
+                            <dl>
+                                <dt><a href="#">设计&产品</a></dt>
+                                <dd><a href="#">HTML</a><a href="#">CSS</a><a href="#">JavaScript</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+                <div class="line"></div>
+            </div>
+            <!-- 幻灯片 -->
+            <div class="slide">
+                <div class="slide-box">
+                    <span class="arrow-left"></span>
+                    <span class="arrow-right"></span>
+                    <div class="slide-img">
+                        <a href="#"><img src="images/bannerimg/55fa424654d52.jpg"></a>
+                        <a href="#"><img src="images/bannerimg/55ee9edcab8c7.jpg"></a>
+                        <a href="#"><img src="images/bannerimg/561b11be035bc.jpg"></a>
+                    </div>
+                    <div class="slide-nav">
+                        <span class="switch"></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 右栏 -->
+            <div class="lesson-right">
+                <div class="box1">
+                    <a href="#">
+                        <h2>极客学院 让学习更有效</h2>
+                        <p>
+                            <span>最新</span>|<span>系统</span>|<span>实战</span>
+                        </p>
+                        <button class="greenbtn2">了解极客学院</button>
+                    </a>
+                </div>
+                <div class="box2">
+                    <a href="#">
+                        <h2>成为VIP 极客启程</h2>
+                        <p> √&nbsp;全部课程&nbsp;&nbsp;√&nbsp;高清视频
+                            <br>√&nbsp;问答服务&nbsp;&nbsp;√&nbsp;课程资料</p>
+                        <button class="greenbtn3">了解VIP权益</button>
+                    </a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- 课程栏 -->
+        <div id="hot-lessonbox">
+            <!-- 热卖课程导航 -->
+            <div class="lesson-nav">
+                <ul>
+                    <li class="on" positionid="1">热门推荐</li>
+                    <li positionid="2">最新课程</li>
+                    <li positionid="3">免费课程</li>
+                </ul>
+            </div>
+            <!--课程导航切换内容，一个导航对应一个ul-->
+            <div class="lesson-list">
+                <ul id="positionid-1" style="display:block;">
+                    <li>
+                        <div class="lessonimg-box">
+                            <i class="lesson-shoucang"></i>
+                            <i class="free-icon"></i>
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/56039fdd7ecb7.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>HBase 入门</h2>
+                            <p>
+                                本课程能让大家知道 HBase 的基本概念，了解其适用的场景，并能独立搭建伪分布式环境，进行简单的 shell 操作。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <i class="lesson-shoucang"></i>
+                            <i class="free-icon"></i>
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/56039fdd7ecb7.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>HBase 入门</h2>
+                            <p>
+                                本课程能让大家知道 HBase 的基本概念，了解其适用的场景，并能独立搭建伪分布式环境，进行简单的 shell 操作。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <i class="lesson-shoucang"></i>
+                            <i class="free-icon"></i>
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/56039fdd7ecb7.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>HBase 入门</h2>
+                            <p>
+                                本课程能让大家知道 HBase 的基本概念，了解其适用的场景，并能独立搭建伪分布式环境，进行简单的 shell 操作。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <i class="lesson-shoucang"></i>
+                            <i class="free-icon"></i>
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/56039fdd7ecb7.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>HBase 入门</h2>
+                            <p>
+                                本课程能让大家知道 HBase 的基本概念，了解其适用的场景，并能独立搭建伪分布式环境，进行简单的 shell 操作。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <i class="lesson-shoucang"></i>
+                            <i class="free-icon"></i>
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/56039fdd7ecb7.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>HBase 入门</h2>
+                            <p>
+                                本课程能让大家知道 HBase 的基本概念，了解其适用的场景，并能独立搭建伪分布式环境，进行简单的 shell 操作。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <i class="lesson-shoucang"></i>
+                            <i class="free-icon"></i>
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/56039fdd7ecb7.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>HBase 入门</h2>
+                            <p>
+                                本课程能让大家知道 HBase 的基本概念，了解其适用的场景，并能独立搭建伪分布式环境，进行简单的 shell 操作。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <i class="lesson-shoucang"></i>
+                            <i class="free-icon"></i>
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/56039fdd7ecb7.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>HBase 入门</h2>
+                            <p>
+                                本课程能让大家知道 HBase 的基本概念，了解其适用的场景，并能独立搭建伪分布式环境，进行简单的 shell 操作。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <i class="lesson-shoucang"></i>
+                            <i class="free-icon"></i>
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/56039fdd7ecb7.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>HBase 入门</h2>
+                            <p>
+                                本课程能让大家知道 HBase 的基本概念，了解其适用的场景，并能独立搭建伪分布式环境，进行简单的 shell 操作。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- tab2 -->
+                <ul id="positionid-2">
+                    <li>
+                        <div class="lessonimg-box">
+                            <i class="lesson-shoucang"></i>
+                            <i class="free-icon"></i>
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/561daf3333188.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>HBase 入门</h2>
+                            <p>
+                                本课程能让大家知道 HBase 的基本概念，了解其适用的场景，并能独立搭建伪分布式环境，进行简单的 shell 操作。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <i class="lesson-shoucang"></i>
+                            <i class="free-icon"></i>
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/561daf3333188.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>HBase 入门</h2>
+                            <p>
+                                本课程能让大家知道 HBase 的基本概念，了解其适用的场景，并能独立搭建伪分布式环境，进行简单的 shell 操作。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <i class="lesson-shoucang"></i>
+                            <i class="free-icon"></i>
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/561daf3333188.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>HBase 入门</h2>
+                            <p>
+                                本课程能让大家知道 HBase 的基本概念，了解其适用的场景，并能独立搭建伪分布式环境，进行简单的 shell 操作。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <i class="lesson-shoucang"></i>
+                            <i class="free-icon"></i>
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/561daf3333188.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>微信远控：让微信控制电脑</h2>
+                            <p>
+                                本课程能让大家知道 HBase 的基本概念，了解其适用的场景，并能独立搭建伪分布式环境，进行简单的 shell 操作。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <i class="lesson-shoucang"></i>
+                            <i class="free-icon"></i>
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/561daf3333188.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>HBase 入门</h2>
+                            <p>
+                                本课程能让大家知道 HBase 的基本概念，了解其适用的场景，并能独立搭建伪分布式环境，进行简单的 shell 操作。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <i class="lesson-shoucang"></i>
+                            <i class="free-icon"></i>
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/561daf3333188.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>HBase 入门</h2>
+                            <p>
+                                本课程能让大家知道 HBase 的基本概念，了解其适用的场景，并能独立搭建伪分布式环境，进行简单的 shell 操作。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <i class="lesson-shoucang"></i>
+                            <i class="free-icon"></i>
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/561daf3333188.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>HBase 入门</h2>
+                            <p>
+                                本课程能让大家知道 HBase 的基本概念，了解其适用的场景，并能独立搭建伪分布式环境，进行简单的 shell 操作。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <i class="lesson-shoucang"></i>
+                            <i class="free-icon"></i>
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/561daf3333188.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>HBase 入门</h2>
+                            <p>
+                                本课程能让大家知道 HBase 的基本概念，了解其适用的场景，并能独立搭建伪分布式环境，进行简单的 shell 操作。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- tab3 -->
+                <ul id="positionid-3">
+                    <li>
+                        <div class="lessonimg-box">
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/56205953f1f89.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>初识 OpenStack</h2>
+                            <p>
+                                介绍 OpenStack 云计算平台的基础知识、发展简史、整体架构，以及 OpenStack 的开源社区,使学员了解 OpenStack 的相关背景和基本功能。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/56205953f1f89.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>初识 OpenStack</h2>
+                            <p>
+                                介绍 OpenStack 云计算平台的基础知识、发展简史、整体架构，以及 OpenStack 的开源社区,使学员了解 OpenStack 的相关背景和基本功能。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/56205953f1f89.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>初识 OpenStack</h2>
+                            <p>
+                                介绍 OpenStack 云计算平台的基础知识、发展简史、整体架构，以及 OpenStack 的开源社区,使学员了解 OpenStack 的相关背景和基本功能。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/56205953f1f89.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>初识 OpenStack</h2>
+                            <p>
+                                介绍 OpenStack 云计算平台的基础知识、发展简史、整体架构，以及 OpenStack 的开源社区,使学员了解 OpenStack 的相关背景和基本功能。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/56205953f1f89.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>初识 OpenStack</h2>
+                            <p>
+                                介绍 OpenStack 云计算平台的基础知识、发展简史、整体架构，以及 OpenStack 的开源社区,使学员了解 OpenStack 的相关背景和基本功能。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/56205953f1f89.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>初识 OpenStack</h2>
+                            <p>
+                                介绍 OpenStack 云计算平台的基础知识、发展简史、整体架构，以及 OpenStack 的开源社区,使学员了解 OpenStack 的相关背景和基本功能。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/56205953f1f89.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>初识 OpenStack</h2>
+                            <p>
+                                介绍 OpenStack 云计算平台的基础知识、发展简史、整体架构，以及 OpenStack 的开源社区,使学员了解 OpenStack 的相关背景和基本功能。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lessonimg-box">
+                            <a href="#" class="lessonimg">
+                                <img src="images/lessonimg/56205953f1f89.jpg">
+                                <div class="lessonplay"><i class="playericon"></i></div>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>初识 OpenStack</h2>
+                            <p>
+                                介绍 OpenStack 云计算平台的基础知识、发展简史、整体架构，以及 OpenStack 的开源社区,使学员了解 OpenStack 的相关背景和基本功能。
+                            </p>
+                            <div class="timeandicon">
+                                <div class="info3">
+                                    <dl>
+                                        <dd>
+                                            <em class="time-icon"></em>5课时84分钟
+                                        </dd>
+                                        <dd>
+                                            <em class="xinhao-icon"></em>初级
+                                        </dd>
+                                    </dl>
+                                    <span class="learn-number">2681人学习</span>
+                                </div>
+                                <div class="info4">
+                                    <a href="#"><img src="images/lessonimg/bigdata.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- 实战路径 -->
+        <div id="projectpath">
+            <div class="public-title">
+                <a class="title" href="#">实战路径图</a><i class="way">?</i><span class="way-info"><i></i>适合新人系统化学习的最佳实践</span><a href="#" class="more-lesson">更多>></a>
+            </div>
+             <!-- 一个实战对应一个a -->
+            <div class="path-card">
+                <a href="#">
+                    <div class="card-in">
+                        <img src="images/lessonimg/android.png" alt="Android路径图" width="70" height="70">
+                        <h2>Android路径图</h2>
+                        <p>迅速掌握核心知识</p>
+                        <p>提升自身竞争力</p>
+                        <p>成为Android开发高手</p>
+                        <button>立即学习</button>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-in">
+                        <img src="images/lessonimg/android.png" alt="Android路径图" width="70" height="70">
+                        <h2>Android路径图</h2>
+                        <p>迅速掌握核心知识</p>
+                        <p>提升自身竞争力</p>
+                        <p>成为Android开发高手</p>
+                        <button>立即学习</button>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-in">
+                        <img src="images/lessonimg/android.png" alt="Android路径图" width="70" height="70">
+                        <h2>Android路径图</h2>
+                        <p>迅速掌握核心知识</p>
+                        <p>提升自身竞争力</p>
+                        <p>成为Android开发高手</p>
+                        <button>立即学习</button>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-in">
+                        <img src="images/lessonimg/android.png" alt="Android路径图" width="70" height="70">
+                        <h2>Android路径图</h2>
+                        <p>迅速掌握核心知识</p>
+                        <p>提升自身竞争力</p>
+                        <p>成为Android开发高手</p>
+                        <button>立即学习</button>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-in">
+                        <img src="images/lessonimg/android.png" alt="Android路径图" width="70" height="70">
+                        <h2>Android路径图</h2>
+                        <p>迅速掌握核心知识</p>
+                        <p>提升自身竞争力</p>
+                        <p>成为Android开发高手</p>
+                        <button>立即学习</button>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-in">
+                        <img src="images/lessonimg/android.png" alt="Android路径图" width="70" height="70">
+                        <h2>Android路径图</h2>
+                        <p>迅速掌握核心知识</p>
+                        <p>提升自身竞争力</p>
+                        <p>成为Android开发高手</p>
+                        <button>立即学习</button>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-in">
+                        <img src="images/lessonimg/android.png" alt="Android路径图" width="70" height="70">
+                        <h2>Android路径图</h2>
+                        <p>迅速掌握核心知识</p>
+                        <p>提升自身竞争力</p>
+                        <p>成为Android开发高手</p>
+                        <button>立即学习</button>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-in">
+                        <img src="images/lessonimg/android.png" alt="Android路径图" width="70" height="70">
+                        <h2>Android路径图</h2>
+                        <p>迅速掌握核心知识</p>
+                        <p>提升自身竞争力</p>
+                        <p>成为Android开发高手</p>
+                        <button>立即学习</button>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-in">
+                        <img src="images/lessonimg/android.png" alt="Android路径图" width="70" height="70">
+                        <h2>Android路径图</h2>
+                        <p>迅速掌握核心知识</p>
+                        <p>提升自身竞争力</p>
+                        <p>成为Android开发高手</p>
+                        <button>立即学习</button>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-in">
+                        <img src="images/lessonimg/android.png" alt="Android路径图" width="70" height="70">
+                        <h2>Android路径图</h2>
+                        <p>迅速掌握核心知识</p>
+                        <p>提升自身竞争力</p>
+                        <p>成为Android开发高手</p>
+                        <button>立即学习</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- 知识体系 翻转只用了css-->
+        <div id="system">
+            <div class="public-title">
+                <a href="#" class="title">知识体系图</a><i class="way">?</i><span class="way-info"><i></i>更快速找到你需要的课程</span><a href="#" class="more-lesson">更多>></a>
+            </div>
+            <!-- 一门课程一个li -->
+            <ul>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/5540424e76332.png" alt="Web前端" width="52">
+                            <h2>Web前端</h2>
+                            <p>180门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-transform">
+                    <a href="#">
+                        <div class="front">
+                            <img src="images/lessonimg/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <p>77门课程</p>
+                        </div>
+                        <div class="back">
+                            <p>810241人已学习</p>
+                            <button>立即学习</button>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 合作院校 -->
+        <div id="school">
+            <div class="public-title">
+                <a href="#" class="title">合作院校</a><a href="#" class="more-lesson">更多>></a>
+            </div>
+            <div class="slide-box-m">
+                <span class="arrow-left"></span>
+                <span class="arrow-right"></span>
+                <div class="slide-box-m-box">
+                <!-- 合作院校切换内容区 -->
+                    <div class="slide-box-inner">
+                        <a href="#"><img src="images/partnersimg/1eb9dcb3193de807d21941b297483635.png"></a>
+                        <a href="#"><img src="images/partnersimg/3c43d20c1649101e18c0ad2177611d76.png"></a>
+                        <a href="#"><img src="images/partnersimg/618f17d0b155a1cb85f2a384e9652b79.png"></a>
+                        <a href="#"><img src="images/partnersimg/3e20afc7934ef591297e6c9d377ed62a.png"></a>
+                        <a href="#"><img src="images/partnersimg/c14635ad605aca1d593e1e52500945af.png"></a>
+                        <a href="#"><img src="images/partnersimg/e4c3c8bbf9d5e56eeca9cc181d9abd48.png"></a>
+                        <a href="#"><img src="images/partnersimg/496ab840e239a60c1bb4b1139268c54e.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 媒体报道 -->
+        <div id="media">
+            <div class="public-title">
+                <a href="#" class="title">媒体报道</a><a href="#" class="more-lesson">更多>></a>
+            </div>
+            <div class="slide-box-m">
+                <span class="arrow-left"></span>
+                <span class="arrow-right"></span>
+                <div class="slide-box-m-box">
+                   <!-- 媒体报道切换内容区 -->
+                    <div class="slide-box-inner">
+                        <a href="#"><img src="images/partnersimg/54d18f3f14fd6.jpg"></a>
+                        <a href="#"><img src="images/partnersimg/54ffb46961d0d.jpg"></a>
+                        <a href="#"><img src="images/partnersimg/551df2a07a195.png"></a>
+                        <a href="#"><img src="images/partnersimg/556e6608940cb.jpg"></a>
+                        <a href="#"><img src="images/partnersimg/55078d94affa7.jpg"></a>
+                        <a href="#"><img src="images/partnersimg/55755bc57f9c9.png"></a>
+                        <a href="#"><img src="images/partnersimg/5513774149948.png"></a>
+                        <a href="#"><img src="images/partnersimg/chukong.jpg"></a>
+                        <a href="#"><img src="images/partnersimg/mt_6_21a38b7.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer id="footer">
+        <div class="jk-info-wrapper">
+            <div class="jk-info">
+                <dl>
+                    <dt><a href="#">极客学院</a></dt>
+                    <dd>·<a href="#">职业课程库</a></dd>
+                    <dd>·<a href="#">知识体系图</a></dd>
+                    <dd>·<a href="#">实战路径图</a></dd>
+                    <dd>·<a href="#">企业课程</a></dd>
+                    <dd>·<a href="#">资源下载</a></dd>
+                    <dd>·<a href="#">课程标签</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">网站服务</a></dt>
+                    <dd>·<a href="#">课程需求</a></dd>
+                    <dd>·<a href="#">免费体验VIP</a></dd>
+                    <dd>·<a href="#">黑板报</a></dd>
+                    <dd>·<a href="#">网站地图</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">帮助中心</a></dt>
+                    <dd>·<a href="#">技术问答</a></dd>
+                    <dd>·<a href="#">VIP权益</a></dd>
+                    <dd>·<a href="#">常见问题</a></dd>
+                    <dd>·<a href="#">服务条款</a></dd>
+                    <dd>·<a href="#">版权声明</a></dd>
+                    <dd>·<a href="#">免责声明</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">交流合作</a></dt>
+                    <dd>·<a href="#">关于我们</a></dd>
+                    <dd>·<a href="#">联系我们</a></dd>
+                    <dd>·<a href="#">社会招聘</a></dd>
+                    <dd>·<a href="#">布道师招募</a></dd>
+                    <dd>·<a href="#">合作咨询</a></dd>
+                    <dd>·<a href="#">友情链接</a></dd>
+                    <dd>·<a href="#">极客助教招募</a></dd>
+                </dl>
+                <div class="share-box">
+                    <p class="title">极客学院，编程是一种信仰！</p>
+                    <!-- 移动端 -->
+                    <div class="app-download">
+                        <a href="#">
+                            <img src="images/iphone_ecb3977.png" width="21">
+                            <strong>手机客户端</strong>
+                            <p>离线缓存 随时学习</p>
+                        </a>
+                    </div>
+                    <!-- 分享图标 -->
+                    <div class="share">
+                        <a href="#" class="sina-icon"></a>
+                        <a href="#" class="tieba-icon"></a>
+                        <a href="#" class="qq-icon"><img src="images/weixin-pop_7fe7a08.png" alt=""></a>
+                    </div>
+                    <!-- 客服 -->
+                    <div class="kefu">
+                        <i class="kefu-icon"></i>
+                        <h5>联系我们</h5>
+                        <p>工作日9:00-21:00在线</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright © 2013-2015 <strong><a href="#" target="_blank">极客学院</a></strong>&nbsp;<strong><a href="#" target="_blank">jikexueyuan.com</a></strong> All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802013056
+        </div>
+    </footer>
+    <!-- 漂浮右栏 -->
+    <div class="gotop" id="gototop">
+        <a class="top" href="#top"></a>
+        <a class="erwma" href="#"> <span class="appewm"></span></a>
+        <a href="#" class="diaocha"></a>
+        <a href="#" class="qq-online"> <span class="kefu">在线客服<br>  工作日9:00-21:00在线<i></i></span></a>
+    </div>
+    <script src="js/vendor/sea.js"></script>
+    <script>
+    // seajs 的简单配置
+    seajs.config({
+        base: "./js/",
+        alias: {
+            "jquery": "jquery.min.js"
+        }
+    })
+    seajs.use("main");
+    </script>
+</body>
+
+</html>

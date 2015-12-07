@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>javascript任务2-简易计算器</title>
+    <link rel="stylesheet" href="style/demo.css">
+</head>
+
+<body>
+    <div class="counter">
+        <table width="100%" border="1">
+            <tr>
+                <td>
+                    <input type="button" value="c" class="cancle" onclick="clearNote()">
+                </td>
+                <td colspan="3" align="right" class="screen">
+                <!-- 计算器运算过程显示位置 -->
+                    <div id="process"></div>
+                    <!-- 计算器显示屏，显示结果和用户输入 -->
+                    <input type="text" readonly="readonly" value="0" id="note">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- 数字7 -->
+                    <input type="button" value="7" onclick="countSHow(this)">
+                </td>
+                <td>
+                    <!-- 数字8 -->
+                    <input type="button" value="8" onclick="countSHow(this)">
+                </td>
+                <td>
+                    <!-- 数字9 -->
+                    <input type="button" value="9" onclick="countSHow(this)">
+                </td>
+                <td>
+                    <!-- 除 -->
+                    <input type="button" value="÷" onclick="operationShow(this)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- 数字4 -->
+                    <input type="button" value="4" onclick="countSHow(this)">
+                </td>
+                <td>
+                    <!-- 数字5 -->
+                    <input type="button" value="5" onclick="countSHow(this)">
+                </td>
+                <td>
+                    <!-- 数字6 -->
+                    <input type="button" value="6" onclick="countSHow(this)">
+                </td>
+                <td>
+                    <!-- 乘 -->
+                    <input type="button" value="x" onclick="operationShow(this)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- 数字1 -->
+                    <input type="button" value="1" onclick="countSHow(this)">
+                </td>
+                <td>
+                    <!-- 数字2 -->
+                    <input type="button" value="2" onclick="countSHow(this)">
+                </td>
+                <td>
+                    <!-- 数字3 -->
+                    <input type="button" value="3" onclick="countSHow(this)">
+                </td>
+                <td>
+                    <!-- 加 -->
+                    <input type="button" value="+" onclick="operationShow(this)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- 数字0 -->
+                    <input type="button" value="0" onclick="countSHow(this)">
+                </td>
+                <td>
+                    <!-- 小数点 -->
+                    <input type="button" value="." onclick="dot()">
+                </td>
+                <td>
+                    <!-- 等于 -->
+                    <input type="button" value="=" onclick="result()">
+                </td>
+                <td>
+                    <!-- 减 -->
+                    <input type="button" value="-" onclick="operationShow(this)">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="demo.js"></script>
+</body>
+
+</html>
