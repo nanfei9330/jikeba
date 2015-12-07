@@ -99,6 +99,5 @@
 
 <h2>php目录</h2>
 <h3>向对象编程以及PHP+MySql入门</h3>
-	<blockquote>
-		<p>开发带后台的H5版本百度新闻，并用之前开发的bootstrap后台完善作为新闻的后台系统</p>
-	</blockquote>
+	<pre><code>     开发带后台的H5版本百度新闻，并用之前开发的bootstrap后台完善作为新闻的后台系统
+</code></pre>
