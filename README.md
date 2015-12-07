@@ -77,15 +77,19 @@
 
 
 <h2>nodejs目录</h2>
-			<blockquote>开发Nodejs版本的百度新闻系统</blockquote>
 
-
+<ul>
+	<li>
+	<p>开发Nodejs版本的百度新闻系统</p>
+</li>
+</ul>
 <h2>FIS目录</h2>
 <h3>掌握前端工业化框架</h3>
-	<blockquote>
-		<p>利用FIS重新组织你的百度首页样式和JS，然后达到工程化可编译状态</p>
-	</blockquote>
-
+<ul>
+	<li>
+	<p>利用FIS重新组织你的百度首页样式和JS，然后达到工程化可编译状态</p>
+</li>
+</ul>
 <h2>less目录</h2>
 <h3>掌握CSS在工程中的变化</h3>
 <ul>
@@ -99,5 +103,8 @@
 
 <h2>php目录</h2>
 <h3>向对象编程以及PHP+MySql入门</h3>
-	<pre><code>     开发带后台的H5版本百度新闻，并用之前开发的bootstrap后台完善作为新闻的后台系统
-</code></pre>
+<ul>
+	<li>
+	<p>开发带后台的H5版本百度新闻，并用之前开发的bootstrap后台完善作为新闻的后台系统</p>
+</li>
+</ul>
