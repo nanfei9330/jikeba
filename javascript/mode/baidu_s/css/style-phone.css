@@ -1,0 +1,344 @@
+/*top-right-user-icon*/
+
+@font-face {
+    font-family: 'icons';
+    src: url('../fonts/iconfont_002d3c35.eot');
+    src: url('../fonts/iconfont_002d3c35.eot') format('embedded-opentype'), url('../fonts/iconfont_002d3c35.ttf') format('truetype'), url('../fonts/iconfont_002d3c35.woff') format('woff'), url('../fonts/iconfont_002d3c35.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*if class= icon-...*/
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'icons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    text-align: center;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #262626;
+}
+
+#page .userinfo {
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+#page .logo {
+    height: 55px;
+    padding: 17px 0 15px;
+}
+
+
+/*form*/
+
+#header .con-wrap {
+    display: -webkit-box;
+    border: 1px solid #8D9394;
+    overflow: hidden;
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+}
+
+#header .con-wrap .keywords {
+    height: 26px;
+    display: block;
+    resize: none;
+    padding: 7px 88px 7px 6px;
+    line-height: 26px;
+    overflow: hidden;
+    -webkit-flex: 1;
+    border: none;
+}
+
+#header .search-btn {
+    width: 79px;
+    height: 40px;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e7e9eb);
+    border: none;
+    color: #46484b;
+    border-left: 1px solid #8d9394;
+    font-weight: 700;
+    font-size: 16px;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    z-index: 55;
+}
+
+
+/*nav*/
+
+#header .nav {
+    margin: 17px 0 14px;
+    overflow: hidden;
+}
+
+#header .nav a {
+    width: 16%;
+    float: left;
+    font-size: 13px;
+    color: #262626;
+}
+
+#header .nav a i {
+    display: block;
+    margin-bottom: 4px;
+    height: 24px;
+}
+
+#header .nav a i {
+    color: #777;
+    font: 24px/1 icons;
+}
+
+
+/*news*/
+
+#header .nav a i.ico-news:before {
+    content: '\e672';
+}
+
+
+/*novel*/
+
+#header .nav a i.ico-novel:before {
+    content: '\e676';
+}
+
+
+/*video*/
+
+#header .nav a i.ico-video:before {
+    content: '\e66f';
+}
+
+
+/*life*/
+
+#header .nav a i.ico-life:before {
+    content: '\e730';
+}
+
+
+/*map*/
+
+#header .nav a i.ico-map:before {
+    content: '\e66c';
+}
+
+
+/*more*/
+
+#header .nav a i.ico-more:before {
+    content: '\e674';
+}
+
+
+/*news-tab*/
+
+#news-tab {
+    border: 1px solid #d9dde2;
+    margin: 30px 0;
+    padding: 10px 0;
+}
+
+#news-tab .title {
+    position: relative;
+    margin: 2px 14px 0;
+    height: 40px;
+    text-align: left;
+}
+
+#news-tab .title .normal-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#news-tab .title .normal-title h2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #aaa;
+}
+
+#news-tab .title .normal-title .ico-title {
+    position: absolute;
+    top: 0;
+    left: -2px;
+    float: left;
+}
+
+#news-tab .title .normal-title .icon-title:before {
+    color: #7db164;
+    content: '\e610';
+}
+
+#news-tab .title .refresh {
+    width: 67px;
+    position: absolute;
+    right: 22px;
+    top: 0;
+    font-size: 14px;
+}
+
+#news-tab .title .icon-refresh:before {
+    content: '\e60d';
+    color: #b6b7ba;
+}
+
+#news-tab .title .icon-edit {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#news-tab .title .icon-edit:before {
+    content: '\e650';
+    color: #b6b7ba;
+}
+
+
+/*new-con*/
+
+#news-tab .new-con {
+    text-align: left;
+    padding: 0 14px;
+    overflow: hidden;
+}
+
+#news-tab .new-con li {
+    display: inline-block;
+    width: 50%;
+    height: 42px;
+    line-height: 42px;
+    float: left;
+}
+
+#news-tab .new-con li .icon-hot:after {
+    content: '\e653';
+    color: #fb4343;
+    font-size: 25px;
+}
+
+#news-tab .new-con li a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/*control my page*/
+
+#control {
+    border: 1px solid #d9dde2;
+    height: 45px;
+    line-height: 45px;
+}
+
+#control a {
+    color: #0058d2;
+}
+
+#control .icon-control {
+    margin-right: 5px;
+}
+
+#control .icon-control:before {
+    content: "\e628";
+    color: #0985C4;
+}
+
+
+/*footer*/
+
+#bottom {
+    margin: 10px 14px;
+    text-align: left;
+    font-size: 12px;
+}
+
+#bottom li {
+    height: 33px;
+    line-height: 33px;
+}
+
+#bottom li .icon-hot:before {
+    content: '\e653';
+    color: #fb4343;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+#bottom li .icon-app:before {
+    content: '\e60f';
+    color: #60ade8;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+#bottom .footlink {
+    margin: 20px 0;
+}
+
+#bottom .footlink a {
+    display: inline-block;
+    height: 24px;
+    width: 47%;
+    line-height: 24px;
+    border: 1px solid #ececec;
+    border-radius: 1px;
+    color: #555;
+    font-size: 13px;
+    text-align: center;
+}
+
+#bottom .footlink a.jishu {
+    float: left;
+}
+
+#bottom .footlink a.fankui {
+    float: right;
+}
+
+#bottom .index-copyright {
+    text-align: center;
+    font-size: 10px;
+    line-height: 20px;
+    padding: 35px 0 13px;
+    color: #aaa;
+}
