@@ -74,7 +74,10 @@
 	<li><p>J利用query完成极客学院首页完整版</p></li>
 	<li><p>利用Jquery完成百度图片瀑布流布局</p></li>
 </ul>
-
+<h3> 掌握JavaScript常用设计模式</h3>
+<ul>
+<li><p>用设计模式改善百度js代码</p></li>
+</ul>
 
 <h2>nodejs目录</h2>
 
